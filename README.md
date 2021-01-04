@@ -7,7 +7,7 @@ Si se desea descargar o clonar el repositorio de nuestro proyecto por favor siga
 * **Eclipse IDE** *Para el código del proyecto*
 * **Postgres** *Para la base de datos*
 * **Visual Studio Code** *Para el código del proyecto*
-* **Pentaho* *Para trasformar los datos*
+* **Pentaho** *Para trasformar los datos*
 ## Construido con Programas como:
 * [ECLIPSE](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-12/R/eclipse-inst-jre-win64.exe)
 * [POSTGRES](https://www.postgresql.org/download/)
