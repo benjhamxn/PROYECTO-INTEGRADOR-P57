@@ -4,8 +4,8 @@ Este proyecto esta orientado a personas que requieren información sobre los dat
 ## INSTRUCCIONES
 Si se desea descargar o clonar el repositorio de nuestro proyecto por favor siga el siguiente link que contiene informacion de como hacerlo: https://docs.github.com/es/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 ### PRE-REQUICITOS
-_Eclipse IDE para el código del proyecto
-*Postgres para la base de datos
+Eclipse IDE para el código del proyecto
+* **Postgres** *para la base de datos*
 *Visual Studio Code para el código del proyecto
 *Pentaho para trasformar los datos
 ## Construido con Programas como:
@@ -17,7 +17,7 @@ _Eclipse IDE para el código del proyecto
 Este proyecto contiene la licencia Apache 2.0
 Para más informacón de la licencia ir al siguiente enlace [https://www.apache.org/licenses/LICENSE-2.0]
 # Autores:
-# Aracely Alvarez (https://github.com/aracelly123-lang)
-# Sebastián Espinel (https://github.com/JEspinel)
-# Benjamín Ríos (https://github.com/benjhamxn)
-# Franks Sañay ()
+* [Aracely Alvarez](https://github.com/aracelly123-lang)
+* [Sebastián Espinel](https://github.com/JEspinel)
+* [Benjamín Ríos](https://github.com/benjhamxn)
+* [Franks Sañay]()
