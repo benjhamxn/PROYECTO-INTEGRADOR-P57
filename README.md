@@ -1,7 +1,7 @@
 # PROYECTO CONTROL ADMOSFÉRICO:  HUMEDAD, PRECIPITACIÓN, VIENTOS
 Este proyecto esta orientado a personas que requieren información sobre los datos meteorológicos del Distrito Metropolitano de Quito, donde se va a poder visualizar reportes sobre la humedad, precipitación y los vientos.
 
-#INSTRUCCIONES
+## INSTRUCCIONES
 Si se desea descargar o clonar el repositorio de nuestro proyecto por favor siga el siguiente link que contiene informacion de como hacerlo: https://docs.github.com/es/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 ### PRE-REQUICITOS
 *Eclipse IDE para el código del proyecto
