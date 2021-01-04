@@ -3,7 +3,7 @@ Este proyecto esta orientado a personas que requieren información sobre los dat
 
 ## INSTRUCCIONES
 Si se desea descargar o clonar el repositorio de nuestro proyecto por favor siga el siguiente link que contiene informacion de como hacerlo: https://docs.github.com/es/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository
-### PRE-REQUICITOS
+### PRE-REQUISITOS
 * **Eclipse IDE** *Para el código del proyecto*
 * **Postgres** *Para la base de datos*
 * **Visual Studio Code** *Para el código del proyecto*
