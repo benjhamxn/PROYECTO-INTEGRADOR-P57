@@ -15,7 +15,7 @@ Si se desea descargar o clonar el repositorio de nuestro proyecto por favor siga
 * [VISUAL STUDIO CODE](https://code.visualstudio.com/docs/?dv=win)
 ## Licencia
 Este proyecto contiene la licencia Apache 2.0
-Para más informacón de la licencia ir al siguiente enlace [https://www.apache.org/licenses/LICENSE-2.0]
+Para más informacón de la licencia ir al siguiente enlace [https://www.apache.org/licenses/LICENSE-2.0].
 # Autores:
 * [Aracely Alvarez](https://github.com/aracelly123-lang)
 * [Sebastián Espinel](https://github.com/JEspinel)
