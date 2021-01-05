@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16097015624090" configfile="/PROYECTO_INTEGRADOR/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="Index.xhtml" x="36" y="31" id="pf16097124050500" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16097124050501" path="/Index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Invitado.xhtml" x="456" y="31" id="pf16097124050512" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf160971353555622 pf160971355398125" inlinks="pf16097124050501 pf16097140051761" path="/Invitado.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="ReportesP.xhtml" x="451" y="204" id="pf160971353555624" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf16097140051761" inlinks="pf160971353555622" path="/ReportesP.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Info.xhtml" x="768" y="31" id="pf160971355398126" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf16097149878520" inlinks="pf160971355398125" path="/Info.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Autores.xhtml" x="758" y="216" id="pf16097149878521" inlinks="pf16097149878520" path="/Autores.xhtml"/>
+  <links id="pf16097124050501" target="pf16097124050512" source="pf16097124050500" outcome="invitado"/>
+  <links id="pf160971353555622" target="pf160971353555624" source="pf16097124050512" outcome="reportes"/>
+  <links id="pf160971355398125" target="pf160971355398126" source="pf16097124050512" outcome="info"/>
+  <links id="pf16097140051761" target="pf16097124050512" source="pf160971353555624" outcome="invi"/>
+  <links id="pf16097149878520" target="pf16097149878521" source="pf160971355398126" outcome="autor"/>
+</pageflow:Pageflow>
