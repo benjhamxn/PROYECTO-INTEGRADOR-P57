@@ -20,4 +20,4 @@ Para más informacón de la licencia ir al siguiente enlace [https://www.apache.
 * [Aracely Alvarez](https://github.com/aracelly123-lang)
 * [Sebastián Espinel](https://github.com/JEspinel)
 * [Benjamín Ríos](https://github.com/benjhamxn)
-* [Franks Sañay]()
+* [Franks Sañay](https://github.com/Franks2695)
