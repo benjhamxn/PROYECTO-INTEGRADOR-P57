@@ -13,7 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/benjamin/SISTEMAS_DEINFORMACION- WORKSPACE/PROYECTO_INTEGRADOR/WebContent/WEB-INF/lib/primefaces-8.0.jar">
+	<classpathentry kind="lib" path="D:/UNIVERSIDAD/sexto semestre/sistemas de informacion/primefaces-8.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
