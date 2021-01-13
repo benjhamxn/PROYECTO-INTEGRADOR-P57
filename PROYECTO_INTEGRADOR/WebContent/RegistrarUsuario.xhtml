@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+
+<h:body>
+	<p:panel id="panel" header="Registrar Nuevo Usuario">
+	<h:panelGrid columns="3" cellpadding="5">
+	
+				<p:outputLabel for="txtNombre" value="Nombre:" />
+				<p:inputText id="txtNombre" value="#{user.nombre}"
+					required="true" requiredMessage="El campo es obligatorio"
+					validatorMessage="Debe ser mayor de dos caracteres">
+					<f:validateLength minimum="2" />
+				</p:inputText>
+				<p:message for="txtNombre" display="text" />
+				
+				<p:outputLabel for="txtEdad" value="Edad:" />
+				<p:inputText id="txtEdad" value="#{user.edad}" required="true"
+					requiredMessage="El campo es obligatorio"
+					validatorMessage="Para registrarse su edad debe estar comprendida entre 18 y 100 años">
+					<f:validateLongRange minimum="18" maximum="100"></f:validateLongRange>
+				</p:inputText>
+				<p:message for="txtEdad" display="text" />
+				
+				<p:outputLabel for="txtCorreoElectronico"
+					value="Correo electrónico:" />
+				<p:inputText id="txtCorreoElectronico" value="#{user.correo}"
+					required="true" requiredMessage="El campo es obligatorio"
+					validatorMessage="Debe ingresar un correo electrónico válido">
+					<f:validateRegex pattern=".+[@].+[.].+"></f:validateRegex>
+				</p:inputText>
+				<p:message for="txtCorreoElectronico" display="text" />
+				
+				<p:outputLabel for="txtClave" value="Clave:" />
+				<p:inputText id="txtClave" value="#{user.clave}" required="true"
+					requiredMessage="El campo es obligatorio"
+					validatorMessage="La clave debe cumplir los parámetros establecidos">
+					<f:validateRegex pattern="([0-9]{2})([a-zA-Z]{6})"></f:validateRegex>
+				</p:inputText>
+				<p:message for="txtClave" display="text" />
+				
+	</h:panelGrid>
+	<p:commandButton value="Registrar" update="panel"
+				action="#{user.registrar}" />
+	</p:panel>
+	</h:body>
+
+</html>
