@@ -13,10 +13,35 @@
 </head>
 
 <body>
+<header class="cabecera">
+
+	<div align="left">
+		<a href="NewFile.jsf"><img
+			src="multimedia/logo.png" alt="" /></a>
+	</div>
+
+	<ul class="listado_2" style="text-align: right;">
+
+	<li><a href="NewFile.jsf">Inicio</a></li>
+
+	<li><a href="Autores.jsf">Autores</a></li>
+
+	<li><a href="Login.jsf">Login</a></li>
+
+	<li><a href="Info.jsf">Información</a></li>
+
+	
+
+	</ul>
+	</header>
+	<main>
+	<br/>
+	<br/>
+	
 <h:form >
     <div class="fondo">
 		<div class="cuadro">
-			<img src="../imagenes/logo1.gif" class="logo"></img>
+			
 			<h2>Iniciar Sesión</h2>
 			<label for="username">Correo</label>
 			<h:inputText id="usuario" value="#{beanRegistroPersona.correo}"
@@ -35,5 +60,12 @@
 		</div>
 	</div>
 </h:form>
+</main>
 </body>
+<footer>
+<div align="center">
+	Licencia Apache 2.0. 
+	<br/>Para más información <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+</div>
+</footer>
 </html>
