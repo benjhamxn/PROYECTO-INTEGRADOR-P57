@@ -1,31 +1,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-      <h:head>
-      </h:head>
-      <h:body>
-      <p:panel id="panel" header="Autores">
-      <p:panelGrid columns="2">	
-				<f:facet name="header">
-					<h:outputText value="Listado de autores del Proyecto" />
-				</f:facet>
-			<h:outputText value="Alvarez Aracelly"/>
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Autores del Proyecto</title>
+	<link rel="stylesheet" href="estilos/estilo.css" type="text/css" />
+</h:head>
+<h:body>
+	<header class="cabecera">
+
+	<div align="left">
+		<a href="NewFile.jsf"><img
+			src="multimedia/logo.png" alt="" /></a>
+	</div>
+
+	<ul class="listado_2" style="text-align: right;">
+
+	<li><a href="NewFile.jsf">Inicio</a></li>
+
+	<li><a href="Autores.jsf">Autores</a></li>
+
+	<li><a href="Login.jsf">Login</a></li>
+
+	<li><a href="Info.jsf">Información</a></li>
+
+	
+	</ul>
+	</header>
+	<main> 
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<p:panel id="panel" header="Autores">
+		<p:panelGrid columns="2">
+			<f:facet name="header">
+				<h:outputText value="Listado de autores del Proyecto" />
+			</f:facet>
+			<h:outputText value="Alvarez Aracelly" />
 			<h:outputText value="aalvarezc3@est.ups.edu.ec" />
-			
-			<h:outputText value="Espinel Sebastian"/>
+
+			<h:outputText value="Espinel Sebastian" />
 			<h:outputText value="jespinelp@est.ups.edu.ec" />
-			
-	      		<h:outputText value="R�os Benjam�n"/>
+
+			<h:outputText value="Ríos Benjamín" />
 			<h:outputText value="griosa@est.ups.edu.ec" />
-	      		
-			<h:outputText value="Sa�ay Franks"/>
+
+			<h:outputText value="Sañay Franks" />
 			<h:outputText value="fsanays@est.ups.edu.ec" />
-			
-			
+
+
 		</p:panelGrid>
-      </p:panel>
-      </h:body>
+	</p:panel>
+	</main>
+</h:body>
+
+
+<footer>
+<div align="center">
+	Licencia Apache 2.0. 
+	<br/>Para más información <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+</div>
+</footer>
 </html>
