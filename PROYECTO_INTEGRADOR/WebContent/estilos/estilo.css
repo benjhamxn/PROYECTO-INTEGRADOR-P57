@@ -1,0 +1,261 @@
+/*Datos generales */
+*{
+    font-family: 'Playfair Display', serif;
+    margin: 0,5 rem;
+  
+}
+table{
+    text-align: center;
+    background-color: #FFFFCC;
+    border-color: grey;
+    margin: 2rem;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    text-align: center;
+    border: 0.2rem outset black;
+    background-color: rgb(149, 145, 207);
+}
+p{
+   
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+h2,h3{
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    border: 0.2rem outset black;
+    text-align: center;
+    background-color: rgb(216, 168, 235);
+}
+
+ol,ul{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a[href^="html"]{
+    color: black;
+}
+
+
+
+.listado_1 li{
+    text-align: center;
+    position: initial;
+    border: 0.01rem outset rgb(0, 0, 0);
+}
+
+.listado_2 li{
+    display: inline;
+    text-align: center;
+    position: initial;
+    color: white;
+}
+
+.imagen{
+    width:"100" ;
+    height:"150";
+
+}
+
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+
+/*head*/
+.cabecera{
+	width: 100%;
+	height: 150px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.navegacion a{
+    background-color: rgb(11, 12, 12);
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navegacion a:link{
+    color: darkred;
+}
+.navegacion a:visited{
+    color: greenyellow;
+}
+.navegacion a:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+
+/*main*/
+main a[href^=https] {
+
+    color:  blue ;
+  
+    }
+.principal{
+    display: flex;
+    background-color: aqua;
+    text-align: center;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #e41212;
+    border-radius: 6px;
+    border: 2px solid #f70000;
+  }
+  .boton:hover{
+    color:black;
+    background-color: #ff4848;
+  }
+
+  #contenedor{
+    text-align: center;
+  }
+  
+  .imga1 {
+    padding: 5px 10px 5px 10px;
+    margin: 2px;
+    display:inline-block;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    background-color: #FFCC33;
+  }
+  .imga2 {
+    padding: 5px 10px 5px 10px;
+    margin: 2px;
+    display:inline-block;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    background-color: #339999;
+  }
+.formularios{
+    text-align: justify;
+    margin: 2rem;
+    background-color: gold;
+}
+
+.definicion dl{
+    border: 0.2rem solid black;
+    outline: darkred solid 1rem;
+    margin: auto;
+    padding: 1rem;
+    text-align: justify;
+}
+.main{
+    background-color: #FFFFCC;
+    border:0.5rem #888;
+    margin: 0.5rem;
+}
+
+main h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(236, 115, 16);
+    clear: both;
+  }
+
+  
+  
+
+.webdesigntuts-workshop {
+    position: center;
+	background: #ccffff;
+	height: 40%;	
+	text-align: center;
+	width: 100%;
+}
+
+.webdesigntuts-workshop form {
+	background: #111;
+	background: -webkit-linear-gradient(#1b1b1b, #111);
+	background: -moz-linear-gradient(#1b1b1b, #111);
+	background: -o-linear-gradient(#1b1b1b, #111);
+	background: -ms-linear-gradient(#1b1b1b, #111);
+	background: linear-gradient(#1b1b1b, #111);
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #272727;
+	display: inline-block;
+	font-size: 0px;
+	margin: 150px auto 0;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	background: #222;
+	background: -webkit-linear-gradient(#333, #222);	
+	background: -moz-linear-gradient(#333, #222);	
+	background: -o-linear-gradient(#333, #222);	
+	background: -ms-linear-gradient(#333, #222);	
+	background: linear-gradient(#333, #222);	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+}
+
+
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: -webkit-linear-gradient(#333, #222);
+	background: -moz-linear-gradient(#333, #222);
+	background: -o-linear-gradient(#333, #222);
+	background: -ms-linear-gradient(#333, #222);
+	background: linear-gradient(#333, #222);
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	width: 80px;
+}	
+
+
