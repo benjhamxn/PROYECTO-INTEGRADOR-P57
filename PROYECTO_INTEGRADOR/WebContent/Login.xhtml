@@ -1,71 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
-		xmlns:p="http://primefaces.org/ui">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 
 <head>
 <title>Login</title>
-
+<link rel="stylesheet" href="estilos/estilo.css" />
 <link rel="stylesheet" href="estilos/login.css" />
 </head>
 
-<body>
-<header class="cabecera">
+<body class="main">
+	<header class="cabecera">
 
-	<div align="left">
-		<a href="NewFile.jsf"><img
-			src="multimedia/logo.png" alt="" /></a>
-	</div>
+<div>
 
-	<ul class="listado_2" style="text-align: right;">
+	<a href="NewFile.jsf"><img align="left" src="multimedia/logo.png" alt="" /></a>
+		
+		<div style="height: 180px;">
+		<a class="titulos">Control de cambio atmosf閞ico<br /> del<br /> Distrito Metropolitano de Quito</a>
+		 </div>
+		
+</div>
+
+<div align="center">
+<ul id="button" class="listado_2">
 
 	<li><a href="NewFile.jsf">Inicio</a></li>
-
+	
 	<li><a href="Autores.jsf">Autores</a></li>
 
-	<li><a href="Login.jsf">Login</a></li>
+	<li><a href="Info.jsf">Informaci髇</a></li>
 
-	<li><a href="Info.jsf">Informaci贸n</a></li>
+	<li><a href="Login.jsf">Iniciar Sesi髇</a></li>
 
-	
 
-	</ul>
-	</header>
-	<main>
-	<br/>
-	<br/>
-	
-<h:form >
-    <div class="fondo">
-		<div class="cuadro">
-			
-			<h2>Iniciar Sesi贸n</h2>
-			<label for="username">Correo</label>
-			<h:inputText id="usuario" value="#{beanRegistroPersona.correo}"
-				pt:placeholder="Ingrese el Correo" required="true"></h:inputText>
+</ul>
+</div>
+</header>
+	<main> <br />
+	<br />
+<form id="j_idt2" name="j_idt2" method="post" action="/PROYECTO_INTEGRADOR/Login.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt2" value="j_idt2" />
 
-			<label for="password">Clave</label>
-			<h:inputSecret id="clave" value="#{beanRegistroPersona.clave}"
-				pt:placeholder="Ingrese Contrase帽a" required="true"></h:inputSecret>
-            <br />
-            <br />
-			<h:commandButton value="Iniciar Sesi贸n"
-				action="#{beanRegistroPersona.iniciarSesion()}" />
-			<a href="Index.jsf">P谩gina Principal</a>
-	
-				 
-		</div>
-	</div>
-</h:form>
-</main>
+		<div class="fondo">
+			<div class="cuadro">
+
+				<h2>Iniciar Sesi髇</h2>
+				<label for="username">Correo</label><input id="j_idt2:usuario" type="text" name="j_idt2:usuario" placeholder="Ingrese el Correo" />
+
+				<label for="password">Clave</label><input id="j_idt2:clave" type="password" name="j_idt2:clave" value="" placeholder="Ingrese Contrase馻" />
+				<br /> <br /><input type="submit" name="j_idt2:j_idt6" value="Iniciar Sesi髇" />
+				<a href="Index.jsf">P醙ina Principal</a>
+
+
+			</div>
+		</div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="3736147033174038177:2185036353184026533" autocomplete="off" />
+</form> </main>
 </body>
-<footer>
+<footer class="footer">
 <div align="center">
-	Licencia Apache 2.0. 
-	<br/>Para m谩s informaci贸n <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+	Licencia Apache 2.0. <br />Para m醩 informaci髇 <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
 </div>
 </footer>
 </html>
