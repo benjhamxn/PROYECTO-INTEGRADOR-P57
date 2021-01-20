@@ -1,53 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-<h:head>
-</h:head>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><link type="text/css" rel="stylesheet" href="/PROYECTO_INTEGRADOR/javax.faces.resource/theme.css.jsf?ln=primefaces-aristo" /><link type="text/css" rel="stylesheet" href="/PROYECTO_INTEGRADOR/javax.faces.resource/components.css.jsf?ln=primefaces&amp;v=8.0" /><script type="text/javascript" src="/PROYECTO_INTEGRADOR/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=8.0"></script><script type="text/javascript" src="/PROYECTO_INTEGRADOR/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=8.0"></script><script type="text/javascript" src="/PROYECTO_INTEGRADOR/javax.faces.resource/core.js.jsf?ln=primefaces&amp;v=8.0"></script><script type="text/javascript" src="/PROYECTO_INTEGRADOR/javax.faces.resource/components.js.jsf?ln=primefaces&amp;v=8.0"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es_EC';}</script>
 
-<h:body>
-	<p:panel id="panel" header="Registrar Nuevo Usuario">
-	<h:panelGrid columns="3" cellpadding="5">
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="estilos/estilo.css" type="text/css" />
+
+<title>Administrador</title></head><body class="main">
+
+<header class="cabecera">
+
+<div>
+
+	<a href="Admin.jsf"><img align="left" src="multimedia/logo.png" alt="" /></a>
+		
+		<div style="height: 180px;">
+		<a class="titulos">Control de cambio atmosférico<br /> del<br /> Distrito Metropolitano de Quito</a>
+		 </div>
+		
+</div>
+
+<div align="center">
+<ul id="button" class="listado_2">
+
+	<li><a href="Admin.jsf">Inicio</a></li>
 	
-				<p:outputLabel for="txtNombre" value="Nombre:" />
-				<p:inputText id="txtNombre" value="#{user.nombre}"
-					required="true" requiredMessage="El campo es obligatorio"
-					validatorMessage="Debe ser mayor de dos caracteres">
-					<f:validateLength minimum="2" />
-				</p:inputText>
-				<p:message for="txtNombre" display="text" />
-				
-				<p:outputLabel for="txtEdad" value="Edad:" />
-				<p:inputText id="txtEdad" value="#{user.edad}" required="true"
-					requiredMessage="El campo es obligatorio"
-					validatorMessage="Para registrarse su edad debe estar comprendida entre 18 y 100 años">
-					<f:validateLongRange minimum="18" maximum="100"></f:validateLongRange>
-				</p:inputText>
-				<p:message for="txtEdad" display="text" />
-				
-				<p:outputLabel for="txtCorreoElectronico"
-					value="Correo electrónico:" />
-				<p:inputText id="txtCorreoElectronico" value="#{user.correo}"
-					required="true" requiredMessage="El campo es obligatorio"
-					validatorMessage="Debe ingresar un correo electrónico válido">
-					<f:validateRegex pattern=".+[@].+[.].+"></f:validateRegex>
-				</p:inputText>
-				<p:message for="txtCorreoElectronico" display="text" />
-				
-				<p:outputLabel for="txtClave" value="Clave:" />
-				<p:inputText id="txtClave" value="#{user.clave}" required="true"
-					requiredMessage="El campo es obligatorio"
-					validatorMessage="La clave debe cumplir los parámetros establecidos">
-					<f:validateRegex pattern="([0-9]{2})([a-zA-Z]{6})"></f:validateRegex>
-				</p:inputText>
-				<p:message for="txtClave" display="text" />
-				
-	</h:panelGrid>
-	<p:commandButton value="Registrar" update="panel"
-				action="#{user.registrar}" />
-	</p:panel>
-	</h:body>
+	<li><a href="RegistrarUsuario.jsf">Registrar_Usuarios</a></li>
+
+	<li><a href="Usuarios.jsf">Usuarios</a></li>
+
+	<li><a href="Auditoria.jsf">Auditoria</a></li>
+
+	<li><a href="NewFile.jsf">Cerrar_Sesión</a></li>
+
+</ul>
+</div>
+</header><div id="panel" class="ui-panel ui-widget ui-widget-content ui-corner-all panel" data-widget="widget_panel"><div id="panel_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Registrar Nuevo Usuario</span></div><div id="panel_content" class="ui-panel-content ui-widget-content"><table cellpadding="1" width="510 px">
+<tbody>
+<tr>
+<td class="forty-percent"><label id="j_idt6" class="ui-outputlabel ui-widget" for="txtNombre">Nombre:<span class="ui-outputlabel-rfi">*</span></label></td>
+<td><input id="txtNombre" name="txtNombre" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" aria-required="true" /><script id="txtNombre_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_txtNombre",{id:"txtNombre",maxlength:-2147483648});});</script></td>
+<td><div id="j_idt7" role="alert" aria-atomic="true" aria-live="polite" class="ui-message"></div><script id="j_idt7_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_j_idt7",{id:"j_idt7",target:"txtNombre"});});</script></td>
+</tr>
+<tr>
+<td class="forty-percent"><label id="j_idt8" class="ui-outputlabel ui-widget" for="txtEdad">Edad:<span class="ui-outputlabel-rfi">*</span></label></td>
+<td><input id="txtEdad" name="txtEdad" type="text" value="0" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" aria-required="true" /><script id="txtEdad_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_txtEdad",{id:"txtEdad",maxlength:-2147483648});});</script></td>
+<td><div id="j_idt9" role="alert" aria-atomic="true" aria-live="polite" class="ui-message"></div><script id="j_idt9_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_j_idt9",{id:"j_idt9",target:"txtEdad"});});</script></td>
+</tr>
+<tr>
+<td class="forty-percent"><label id="j_idt10" class="ui-outputlabel ui-widget" for="txtCorreoElectronico">Correo electrónico:<span class="ui-outputlabel-rfi">*</span></label></td>
+<td><input id="txtCorreoElectronico" name="txtCorreoElectronico" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" aria-required="true" /><script id="txtCorreoElectronico_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_txtCorreoElectronico",{id:"txtCorreoElectronico",maxlength:-2147483648});});</script></td>
+<td><div id="j_idt11" role="alert" aria-atomic="true" aria-live="polite" class="ui-message"></div><script id="j_idt11_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_j_idt11",{id:"j_idt11",target:"txtCorreoElectronico"});});</script></td>
+</tr>
+<tr>
+<td class="forty-percent"><label id="j_idt12" class="ui-outputlabel ui-widget" for="txtClave">Clave:<span class="ui-outputlabel-rfi">*</span></label></td>
+<td><input id="txtClave" name="txtClave" type="text" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" aria-required="true" /><script id="txtClave_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_txtClave",{id:"txtClave",maxlength:-2147483648});});</script></td>
+<td><div id="j_idt13" role="alert" aria-atomic="true" aria-live="polite" class="ui-message"></div><script id="j_idt13_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_j_idt13",{id:"j_idt13",target:"txtClave"});});</script></td>
+</tr>
+</tbody>
+</table>
+<button id="j_idt14" name="j_idt14" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;j_idt14&quot;,u:&quot;panel&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Registrar</span></button><script id="j_idt14_s" type="text/javascript">$(function(){PrimeFaces.cw("CommandButton","widget_j_idt14",{id:"j_idt14"});});</script></div></div><script id="panel_s" type="text/javascript">$(function(){PrimeFaces.cw("Panel","widget_panel",{id:"panel"});});</script></body>
+	<footer class="footer">
+	<div align="center">
+	Licencia Apache 2.0. 
+	<br />Para más información <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+</div>
+	</footer>
 
 </html>
