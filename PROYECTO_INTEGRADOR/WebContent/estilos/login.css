@@ -14,18 +14,7 @@ ol,ul{
 ul{
     list-style-type: none;
 }
-.listado_2 li{
-    display: inline;
-    text-align: center;
-    position: initial;
-    color: white;
-}
-.cabecera{
-	width: 100%;
-	height: 150px;
-    text-align: center;
-    background-color: #ffffff;
-}
+
 .cuadro {
 	width: 320px;
 	height: 330px;
