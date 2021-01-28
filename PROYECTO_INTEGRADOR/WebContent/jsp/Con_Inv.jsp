@@ -7,7 +7,10 @@
 <%@ page import="CONTROLADOR.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<link rel="stylesheet" href="../estilos/Index.css">
+
+<link rel="stylesheet" href="../estilos/Registro_Inv.css">
+<link rel="stylesheet" href="../estilos/Cabecera.css">
+<link rel="stylesheet" href="../estilos/Inicio.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script>
 	$(document).ready(function() {
@@ -22,40 +25,63 @@
 </script>
 <body>
 	<h1></h1>
-	
-	<form action="Con_Inv.jsp" method="post">
-		<header>
-		<div class="wrapper">
-			<div class="logo1">
-				<img src="../img/clima.gif" width="146" height="134" alt=logo1 />
-			</div>
-			<div class="logo">CONTROL ATMOSFÉRICO</div>
-			<br><br><br><br><br><br><br><br><br><br><br><br>
-			IMPORTANTE: Solo si maquina soporta una gran cantidad de datos, consultar mediante los botones, de lo contrario, puede dirigirse a la pestaña "Archivos" y podrá encontrar los descargables.<br> 
-			<br>
-			<input type="submit" name="btnC5" value="BOTON EN MANTENIMIENTO" /> <br> 
-	</form>
-	
-	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC" value="VER DATOS DE HUMEDAD" /> <br> 
-	</form>
-	
-	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC1" value="BOTON EN MANTENIMIENTO" /> <br> 
-	</form>
-	
-	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC2" value="BOTON EN MANTENIMIENTO" /> <br> 
-	</form>
-	
-	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC3" value="BOTON EN MANTENIMIENTO" /> <br> <br>
-			<a href="Inicio.jsp">Regresar</a><br>
+	<header class="cabecera">
+
+	<div>
+		<header class="cabecera"> <a href="Inicio.jsp"><img
+			align="left" src="../img/clima.gif" alt="" /></a>
+
+		<div style="height: 180px;">
+			<a class="titulos">
+				<h1>
+					CONTROL ATMOSFÉRICO<br /> DEL<br /> DISTRITO METROPOLITANO DE
+					QUITO
+				</h1>
+			</a>
 		</div>
-		</header>
-		<section class="contenido wrapper"> <br>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	IMPORTANTE: Solo si maquina soporta una gran cantidad de datos,
+	consultar mediante los botones, de lo contrario, puede dirigirse a la
+	pestaña "Archivos" y podrá encontrar los descargables.<br>
+	<br>
+	<form action="Con_Inv.jsp" method="post" class="form">
+
+			<input type="submit" name="btnC5" value="BOTON EN MANTENIMIENTO" />
+			<br>
 	</form>
-	
+
+	<form action="Con_Inv.jsp" method="post" class="form">
+		<input type="submit" name="btnC" value="VER DATOS DE HUMEDAD" /> <br>
+	</form>
+
+	<form action="Con_Inv.jsp" method="post" class="form">
+		<input type="submit" name="btnC1" value="BOTON EN MANTENIMIENTO" /> <br>
+	</form>
+
+	<form action="Con_Inv.jsp" method="post" class="form">
+		<input type="submit" name="btnC2" value="BOTON EN MANTENIMIENTO" /> <br>
+	</form>
+
+	<form action="Con_Inv.jsp" method="post" class="form">
+		<input type="submit" name="btnC3" value="BOTON EN MANTENIMIENTO" /> <br>
+		<br> <a href="Inicio.jsp">Regresar</a><br>
+		</div>
+	</header>
+	<section class="contenido wrapper"> <br>
+	</form>
+
 	<%
 		if (request.getParameter("btnC5") != null) {
 			
@@ -97,7 +123,7 @@
 			}
 		}
 	%>
-	
+
 	<%
 		if (request.getParameter("btnC") != null) {
 			
@@ -149,7 +175,7 @@
 		}
 	%>
 
-	
+
 	<%
 		if (request.getParameter("btnC1") != null) {
 			
@@ -190,7 +216,7 @@
 			}
 		}
 	%>
-	
+
 	<%
 		if (request.getParameter("btnC2") != null) {
 			
@@ -232,7 +258,7 @@
 			}
 		}
 	%>
-	
+
 	<%
 		if (request.getParameter("btnC3") != null) {
 			
@@ -274,7 +300,7 @@
 		}
 	%>
 
-<%
+	<%
 		if (request.getParameter("btnC4") != null) {
 
 			try {
@@ -318,4 +344,11 @@
 		}
 	%>
 </body>
+
+<footer class="footer">
+<div align="center">
+	Licencia Apache 2.0. <br />Para más información <a
+		href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+</div>
+</footer>
 </html>

@@ -66,8 +66,7 @@
 			try {
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
-				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/Base_Relacional_PI", "postgres", "1234");
+				Connection conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Base_Relacional_PI", "postgres", "123");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
