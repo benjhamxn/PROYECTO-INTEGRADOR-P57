@@ -15,48 +15,54 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body class="main">
-<div>
-<header class="cabecera">
+	<div>
+		<header class="cabecera"> <a href="NewFile.jsf"><img
+			align="left" src="../img/clima.gif" alt="" /></a>
 
-	<a href="NewFile.jsf"><img align="left" src="../img/clima.gif" alt="" /></a>
-		
 		<div style="height: 180px;">
-		<a class="titulos">
-		 <h1>CONTROL ATMOSFÉRICO<br /> DEL<br /> DISTRITO METROPOLITANO DE QUITO</h1></a>
-		 </div>
-		
-</div>
-<div align="center">
-<ul id="button" class="listado_2">
-
-	<li><a href="Inicio.jsp">Inicio</a></li>
-	
-	<li><a href="Autores.jsf">Autores</a></li>
-
-	<li><a href="Info.jsf">Información</a></li>
-
-	<li><a href="Login.jsf">Iniciar Sesión</a></li>
-
-</ul>
-</div>
-	<form action="Reg_Inv.jsp" method="post">
-	<div class="login-box">
-			<img src="../img/control.jpg"
-				class="avatar animated infinite" alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Registro Usuario Invitado</h1>
-			<label for="username"> DATOS: </label> <input type="text"
-				name="id" placeholder=" Ingrese numero de la suerte "><input type="text"
-				name="Nombre" placeholder=" Ingrese su nombre "> <input type="text"
-				name="edad" placeholder=" Ingrese su edad "> <input type="text"
-				name="correo" placeholder=" Ingrese su correo electrónico "> <input type="text"
-				name="clave" placeholder=" Ingrese una clave "> <input
-				type="submit" name="btnC" value="REGISTRAR" /> <br> 
-			<a href="Registrar.jsp">REGRESAR</a> <br>
-			<a href="In_Inv.jsp">INICIAR SESIÓN</a>
-		
+			<a class="titulos">
+				<h1>
+					CONTROL ATMOSFÉRICO<br /> DEL<br /> DISTRITO METROPOLITANO DE
+					QUITO
+				</h1>
+			</a>
+		</div>
 	</div>
+	<div align="center">
+		<ul id="button" class="listado_2">
+
+			<li><a href="Inicio.jsp">Inicio</a></li>
+
+			<li><a href="Autores.jsf">Autores</a></li>
+
+			<li><a href="Info.jsf">Información</a></li>
+
+			<li><a href="Login.jsf">Iniciar Sesión</a></li>
+
+		</ul>
+	</div>
+	</header>
+	<main>
+	<form action="Reg_Inv.jsp" method="post">
+		<div class="login-box">
+			<img src="../img/control.jpg" class="avatar animated infinite"
+				alt="Avatar Image">
+			<h1 class="animated infinite zoomIn slower">Registro Usuario
+				Invitado</h1>
+			<label for="username"> DATOS: </label> <input type="text" name="id"
+				placeholder=" Ingrese numero de la suerte "><input
+				type="text" name="Nombre" placeholder=" Ingrese su nombre ">
+			<input type="text" name="edad" placeholder=" Ingrese su edad ">
+			<input type="text" name="correo"
+				placeholder=" Ingrese su correo electrónico "> <input
+				type="text" name="clave" placeholder=" Ingrese una clave ">
+			<input type="submit" name="btnC" value="REGISTRAR" /> <br> <a
+				href="Registrar.jsp">REGRESAR</a> <br> <a href="In_Inv.jsp">INICIAR
+				SESIÓN</a>
+
+		</div>
 	</form>
-<%
+	<%
 		if (request.getParameter("btnC") != null) {
 			String id = request.getParameter("id");
 			String nombre = request.getParameter("Nombre");
@@ -82,15 +88,12 @@
 				out.println(e);
 			}
 		}
-	%>
-
-</header>
+	%> </main>
 </body>
 <footer class="footer">
 <div align="center">
-	Licencia Apache 2.0. 
-	<br />Para más información <a href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
+	Licencia Apache 2.0. <br />Para más información <a
+		href="https://www.apache.org/licenses/LICENSE-2.0">click aqui</a>
 </div>
 </footer>
 </html>
-	
