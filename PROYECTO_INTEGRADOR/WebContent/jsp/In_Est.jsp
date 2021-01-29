@@ -22,7 +22,7 @@
 				for="password">Contraseña</label> <input type="password" name="clave"
 				placeholder="Ingrese la Contraseña"> <input type="submit"
 				value="Iniciar"> 
-				<a href="Inicio.jsp">REGRESAR</a>
+				<a href="Inicio_Usuario.jsp">REGRESAR</a>
 		</div>
 	</form>
 </body>

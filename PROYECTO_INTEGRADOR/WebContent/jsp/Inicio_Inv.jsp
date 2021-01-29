@@ -30,13 +30,13 @@
 <div align="center">
 <ul id="button" class="listado_2">
 
-	<li><a href="Pagina_Principal.jsp">Inicio</a></li>
+	<li><a href="Inicio_Inv.jsp">Inicio</a></li>
 	
 	<li><a href="Con_Inv.jsp">Consultar</a></li>
 	
 	<li><a href="Autores.jsp">Autores</a></li>
 
-	<li><a href="Archivos.jsp">Archivos</a></li>
+	<li><a href="Pagina_Principal.jsp">Iniciar Sesión</a></li>
 
 </ul>
 </div>

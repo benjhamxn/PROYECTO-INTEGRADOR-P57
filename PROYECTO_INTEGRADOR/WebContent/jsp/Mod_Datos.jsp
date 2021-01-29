@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div>
-		<header class="cabecera"> <a href="Inicio.jsp"><img
+		<header class="cabecera"> <a href="Inicio_Admin.jsp"><img
 			align="left" src="../img/clima.gif" alt="" /></a>
 
 		<div style="height: 180px;">
@@ -34,9 +34,9 @@
 	<div align="center">
 		<ul id="button" class="listado_2">
 
-			<li><a href="Pagina_Principal.jsp">Inicio</a></li>
+			<li><a href="Inicio_Admin.jsp">Inicio</a></li>
 
-			<li><a href="Con_Inv.jsp">Consultar</a></li>
+			<li><a href="Con_Datos.jsp">Consultar</a></li>
 
 			<li><a href="In_Datos.jsp">Insertar Datos</a></li>
 			

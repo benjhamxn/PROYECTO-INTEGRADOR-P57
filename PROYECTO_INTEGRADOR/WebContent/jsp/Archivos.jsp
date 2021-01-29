@@ -21,7 +21,7 @@
 <div>
 <header class="cabecera">
 
-	<a href="Inicio.jsp"><img align="left" src="../img/clima.gif" alt="" /></a>
+	<a href="Inicio_Usuario.jsp"><img align="left" src="../img/clima.gif" alt="" /></a>
 		
 		<div style="height: 180px;">
 		<a class="titulos">
@@ -32,15 +32,14 @@
 <div align="center">
 <ul id="button" class="listado_2">
 
-	<li><a href="Inicio.jsp">Inicio</a></li>
+	<li><a href="Inicio_Inv.jsp">Inicio</a></li>
 	
 	<li><a href="Con_Inv.jsp">Consultar</a></li>
 	
 	<li><a href="Autores.jsp">Autores</a></li>
+	
+	<li><a href="Pagina_Principal.jsp">Iniciar Sesión</a></li>
 
-	<li><a href="Archivos.jsp">Archivos</a></li>
-
-	<li><a href="In_Est.jsp">Iniciar Sesión</a></li>
 
 </ul>
 </div>

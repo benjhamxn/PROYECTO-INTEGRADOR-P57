@@ -26,7 +26,7 @@
 
 	<li><a href="Pagina_Principal.jsp">Inicio</a></li>
 	
-	<li><a href="Pagina_Principal.jsp">Autores</a></li>
+	<li><a href="Autores.jsp">Autores</a></li>
 
 </ul>
 </div>

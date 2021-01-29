@@ -26,9 +26,21 @@
 <body>
 	<h1></h1>
 	<header class="cabecera">
+<div align="center">
+<ul id="button" class="listado_2">
 
+	<li><a href="Inicio_Inv.jsp">Inicio</a></li>
+	
+	<li><a href="Con_Inv.jsp">Consultar</a></li>
+	
+	<li><a href="Autores.jsp">Autores</a></li>
+
+	<li><a href="In_Inv.jsp">Iniciar Sesión</a></li>
+
+</ul>
+</div>
 	<div>
-		<header class="cabecera"> <a href="Inicio.jsp"><img
+		<header class="cabecera"> <a href="Inicio_Inv.jsp"><img
 			align="left" src="../img/clima.gif" alt="" /></a>
 
 		<div style="height: 180px;">
@@ -76,7 +88,7 @@
 
 	<form action="Con_Inv.jsp" method="post" class="form">
 		<input type="submit" name="btnC3" value="BOTON EN MANTENIMIENTO" /> <br>
-		<br> <a href="Inicio.jsp">Regresar</a><br>
+
 		</div>
 	</header>
 	<section class="contenido wrapper"> <br>
