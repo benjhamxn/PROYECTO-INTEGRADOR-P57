@@ -38,7 +38,9 @@
 
 			<li><a href="Con_Inv.jsp">Consultar</a></li>
 
-			<li><a href="Autores.jsp">Autores</a></li>
+			<li><a href="Elim_Datos.jsp">Eliminar Datos</a></li>
+			
+			<li><a href="Mod_Datos.jsp">Modificar Datos</a></li>
 
 
 		</ul>
@@ -47,7 +49,7 @@
 
 
 	<br>
-	<form action="Reg_Inv.jsp" method="post">
+	<form action="In_Datos.jsp" method="post">
 		<div class="login-box">
 
 			<label for="username"> DATOS: </label>
