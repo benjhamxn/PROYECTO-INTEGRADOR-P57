@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>DIMENSIONAL-PROYECTO-INTEGRADOR-P57</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="ffa9fd46-f513-4a62-9019-5b3e65109a13" name="DIM_PRECIPITACION" objectType="TABLE" physicalName="DIM_PRECIPITACION" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="78f41479-5393-4bce-be7a-a8a943415bc4" autoIncrement="true" autoIncrementSequenceName="DIM_PRECIPITACION_sk_precipitacion_seq" defaultValue="" name="sk_precipitacion" nullable="0" physicalName="sk_precipitacion" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="4b98a091-1a08-4de3-97dd-5f87888ae4c4" autoIncrement="true" autoIncrementSequenceName="DIM_PRECIPITACION_pk_precipitacion_seq" defaultValue="" name="pk_precipitacion" nullable="0" physicalName="pk_precipitacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="0bb18433-9740-4c71-8719-14b12e7f0664" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_belisario_pre _seq" defaultValue="" name="belisario_pre" nullable="0" physicalName="belisario_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="454abd5b-e0f3-4f9d-9f27-11961214f9d1" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_carapungo_pre _seq" defaultValue="" name="carapungo_pre" nullable="0" physicalName="carapungo_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="eb0db6e5-879c-42d8-a913-28b06f5286b7" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_centro_pre _seq" defaultValue="" name="centro_pre" nullable="0" physicalName="centro_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="78b551ed-b8f9-493c-974d-1968d9ac3301" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_cotocollao_pre _seq" defaultValue="" name="cotocollao_pre " nullable="0" physicalName="cotocollao_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="67d2b36e-e50d-49d1-ae01-a768c030bdf2" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_elcamal_pre _seq" defaultValue="" name="elcamal_pre" nullable="0" physicalName="elcamal_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL9" populated="true" UUID="c90c9b1c-e9bc-49e5-9b09-01450a016c61" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_guamani_pre _seq" defaultValue="" name="guamani_pre" nullable="0" physicalName="guamani_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL10" populated="true" UUID="c95ab4e4-efcd-4ed4-aa1e-bc39abeb38da" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_loschillos_pre _seq" defaultValue="" name="loschillos_pre" nullable="0" physicalName="loschillos_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="8ae97c56-797b-41ae-8f8c-e203c814ee4a" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_sanantonio_pre _seq" defaultValue="" name="sanantonio_pre" nullable="0" physicalName="sanantonio_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="3a973750-be7d-4f6f-bf9e-814b3b82f31a" autoIncrement="false" autoIncrementSequenceName="DIM_PRECIPITACION_tumbaco_pre _seq" defaultValue="" name="tumbaco_pre" nullable="0" physicalName="tumbaco_pre" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="8e52c438-8e8a-4beb-9ec7-1b0560564de9" autoIncrement="false" autoIncrementSequenceName="DIM_SECTOR_valido_desde_seq_1" defaultValue="" name="valido_desde" nullable="1" physicalName="valido_desde" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="9a587f42-2c41-44e9-9a6b-2e0b0eb5d567" autoIncrement="false" autoIncrementSequenceName="DIM_SECTOR_valido_hasta_seq_1" defaultValue="" name="valido_hasta" nullable="1" physicalName="valido_hasta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL15" populated="true" UUID="31cf6331-c081-4071-9bca-80b01e2ccd62" autoIncrement="true" autoIncrementSequenceName="DIM_SECTOR_version_seq_1" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX16" populated="true" UUID="9a87c422-5744-442b-9528-a4c73dfd44be" clustered="false" name="PK_DIM_PRECIPITACION" physicalName="pk_dim_precipitacion" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC17" populated="true" UUID="a87670a4-bcdb-4c22-8458-e85c68551273" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="sk_precipitacion" physicalName="sk_precipitacion" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB18" populated="true" UUID="76b9bbcb-7ef2-4989-abc9-65c252185834" name="DIM_VIENTOS_VEL" objectType="TABLE" physicalName="DIM_VIENTOS_VEL" >
+   <remarks></remarks>
+   <folder id="FOLTAB181" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL19" populated="true" UUID="f880c2d2-fce4-4386-98d8-cb4e95b58fb7" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_VEL_sk_vientos_vel_seq" defaultValue="" name="sk_vientos_vel" nullable="0" physicalName="sk_vientos_vel" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="195701a2-b7b8-4aac-813a-fb87109db0fc" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_VEL_pk_vientos_vel_seq" defaultValue="" name="pk_vientos_vel" nullable="0" physicalName="pk_vientos_vel" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="7ba73bde-1dab-40b5-a656-31c5e1d1858a" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_belisario_vie _seq" defaultValue="" name="belisario_vie" nullable="0" physicalName="belisario_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="bc007afc-f681-455d-ba03-4bb5f2edaf00" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_carapungo_vie _seq" defaultValue="" name="carapungo_vie" nullable="0" physicalName="carapungo_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL23" populated="true" UUID="b14d90ad-4d05-43c1-8324-45cf9809bda2" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_centro_vie _seq" defaultValue="" name="centro_vie" nullable="0" physicalName="centro_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="dee6dc3c-44e5-48ae-a452-62b942b79454" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_cotocollao_vie _seq" defaultValue="" name="cotocollao_vie" nullable="0" physicalName="cotocollao_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="d22c06ec-7612-415f-84fe-527bbc023a40" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_elcamal_vie _seq" defaultValue="" name="elcamal_vie" nullable="0" physicalName="elcamal_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL26" populated="true" UUID="c97e58de-b0bc-4c45-a127-a9bc092a18ac" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_guamani_vie _seq" defaultValue="" name="guamani_vie" nullable="0" physicalName="guamani_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="fa00a582-af71-4126-85c4-20947b815c9b" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_loschillos_vie _seq" defaultValue="" name="loschillos_vie" nullable="0" physicalName="loschillos_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL28" populated="true" UUID="d758e7c4-d1be-43d8-8893-028fee6e6f2a" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_sanantonio_vie _seq" defaultValue="" name="sanantonio_vie" nullable="0" physicalName="sanantonio_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="d4748be2-2428-45e6-a0d0-d5e50e001dd5" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_tumbaco_vie _seq" defaultValue="" name="tumbaco_vie" nullable="0" physicalName="tumbaco_vie" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="a881f479-d45f-40c4-99f0-3f08a68160f3" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_valido_desde_seq" defaultValue="" name="valido_desde" nullable="1" physicalName="valido_desde" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="239b39ae-3bd2-4147-9ac2-71fc2dae2b7d" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_VEL_valido_hasta_seq" defaultValue="" name="valido_hasta" nullable="1" physicalName="valido_hasta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="10bf1c85-a544-4af7-9d7a-6b5e053f18d4" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_VEL_version_seq" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB183" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB182" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB184" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX33" populated="true" UUID="8fc5ecdf-814f-4068-ba04-7c92881b7d81" clustered="false" name="PK_DIM_VIENTOS_VEL" physicalName="pk_dim_vientos_vel" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC34" populated="true" UUID="11110e4b-e71a-4f6f-b652-d462110d399e" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="sk_vientos_vel" physicalName="sk_vientos_vel" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB35" populated="true" UUID="68b25e22-943a-42fa-8ec2-bdd2c354e006" name="DIM_HUMEDAD" objectType="TABLE" physicalName="DIM_HUMEDAD" >
+   <remarks></remarks>
+   <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL36" populated="true" UUID="94a65a69-e4d6-48f1-b067-8654dc3ef0a7" autoIncrement="true" autoIncrementSequenceName="DIM_HUMEDAD_sk_humedad_seq" defaultValue="" name="sk_humedad" nullable="0" physicalName="sk_humedad" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="72554484-99c2-4660-9802-e1a841cc555a" autoIncrement="true" autoIncrementSequenceName="DIM_HUMEDAD_pk_humedad_seq" defaultValue="" name="pk_humedad" nullable="0" physicalName="pk_humedad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="c463e551-8d08-4b35-b49b-dd4f6fff059b" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_belisario_hum _seq" defaultValue="" name="belisario_hum" nullable="0" physicalName="belisario_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="d37440b5-cac1-4833-abad-ee4ba2f4b84d" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_carapungo_hum _seq" defaultValue="" name="carapungo_hum" nullable="0" physicalName="carapungo_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="22becf9b-0238-4b8a-99a4-41cddcf1fe60" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_centro_hum _seq" defaultValue="" name="centro_hum" nullable="0" physicalName="centro_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="56722a13-185f-47b0-a66e-3356e70858e8" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_cotocollao_hum _seq" defaultValue="" name="cotocollao_hum" nullable="0" physicalName="cotocollao_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL42" populated="true" UUID="4d74b2d1-fa73-4dd3-afa0-616d9843ddb9" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_elcamal_hum _seq" defaultValue="" name="elcamal_hum" nullable="0" physicalName="elcamal_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL43" populated="true" UUID="4401a744-1a68-46c5-b00a-3c8e06336b1d" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_guamani_hum _seq" defaultValue="" name="guamani_hum" nullable="0" physicalName="guamani_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL44" populated="true" UUID="8f01f8bb-fcf1-4cbe-a3df-b1f8ab86dabe" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_loschillos_hum _seq" defaultValue="" name="loschillos_hum" nullable="0" physicalName="loschillos_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="5577316b-1cce-4149-a809-c29041c25400" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_sanantonio_hum _seq" defaultValue="" name="sanantonio_hum" nullable="0" physicalName="sanantonio_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL46" populated="true" UUID="f7a6f396-ac2e-45b0-a45e-d94334773699" autoIncrement="false" autoIncrementSequenceName="DIM_HUMEDAD_tumbaco_hum _seq" defaultValue="" name="tumbaco_hum" nullable="0" physicalName="tumbaco_hum" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="ebc0b3d9-71fd-4092-a96d-5bb52092cbfd" autoIncrement="false" autoIncrementSequenceName="DIM_SECTOR_valido_desde_seq_3" defaultValue="" name="valido_desde" nullable="1" physicalName="valido_desde" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="daca06e7-ffe1-44d0-884c-652229cf4d9a" autoIncrement="false" autoIncrementSequenceName="DIM_SECTOR_valido_hasta_seq_3" defaultValue="" name="valido_hasta" nullable="1" physicalName="valido_hasta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="ca35aee4-ee2c-44a6-aa70-066e2f819c16" autoIncrement="true" autoIncrementSequenceName="DIM_SECTOR_version_seq_3" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB353" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX50" populated="true" UUID="3950c085-1b2f-4da7-a18c-27397df7fd6f" clustered="false" name="PK_DIM_HUMEDAD" physicalName="pk_dim_humedad" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC51" populated="true" UUID="e044bfc3-9659-4841-b1c8-2e11f15b44d7" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="sk_humedad" physicalName="sk_humedad" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB52" populated="true" UUID="1ba474cd-20bc-4870-b41b-8995c09619ed" name="FACT_SECTOR" objectType="TABLE" physicalName="FACT_SECTOR" >
+   <remarks></remarks>
+   <folder id="FOLTAB521" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL53" populated="true" UUID="bf54ddbb-5f00-4b50-a3b3-13d8bde73f75" autoIncrement="true" autoIncrementSequenceName="FACT_SECTOR_sk_precipitacion_seq" defaultValue="" name="sk_precipitacion" nullable="0" physicalName="sk_precipitacion" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="6e9f62d8-ebaa-4859-9ca6-bdbe626ad3d4" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_sk_vientos_seq_1" defaultValue="" name="sk_vientos_vel" nullable="0" physicalName="sk_vientos_vel" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="618b56bd-fdd2-4ca9-9db5-64b95c32aaf7" autoIncrement="false" autoIncrementSequenceName="FACT_SECTOR_sk_humedad_seq" defaultValue="" name="sk_humedad" nullable="0" physicalName="sk_humedad" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="78c507c7-20c6-4196-b0f7-6e28725083ab" autoIncrement="false" autoIncrementSequenceName="FACT_SECTOR_sk_fecha_seq" defaultValue="" name="sk_fecha" nullable="0" physicalName="sk_fecha" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="ccb6d7f2-91de-40c9-875b-5090224a397f" autoIncrement="false" autoIncrementSequenceName="FACT_SECTOR_sk_vientos_dir_seq" defaultValue="" name="sk_vientos_dir" nullable="0" physicalName="sk_vientos_dir" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL58" populated="true" UUID="051197ec-9f6b-4bbc-868f-a0bdc155fd9a" autoIncrement="true" autoIncrementSequenceName="FACT_SECTOR_pk_precipitacion_seq" defaultValue="" name="pk_precipitacion" nullable="0" physicalName="pk_precipitacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL59" populated="true" UUID="2509b2db-bfff-4f0e-9337-875bab6352d6" autoIncrement="true" autoIncrementSequenceName="FACT_SECTOR_pk_vientos_dir_seq" defaultValue="" name="pk_vientos_dir" nullable="0" physicalName="pk_vientos_dir" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL60" populated="true" UUID="7b422c83-1e49-4e01-85e9-dbc79cb1362e" autoIncrement="true" autoIncrementSequenceName="FACT_SECTOR_pk_vientos_vel_seq" defaultValue="" name="pk_vientos_vel" nullable="0" physicalName="pk_vientos_vel" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL61" populated="true" UUID="426e55b9-8515-4353-8318-49bb1cb4791c" autoIncrement="true" autoIncrementSequenceName="FACT_SECTOR_pk_humedad_seq" defaultValue="" name="pk_humedad" nullable="0" physicalName="pk_humedad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB523" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB522" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB524" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX62" populated="true" UUID="8748b9a8-cfa1-4368-a823-97ba23db5580" clustered="false" name="PK_FACT_SECTOR" physicalName="pk_fact_sector" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC63" populated="true" UUID="5316d8a9-fd50-4753-9297-fd4f001f33e0" ascendingOrDescending="UNSPECIFIED" column-ref="COL53" name="sk_precipitacion" physicalName="sk_precipitacion" />
+     <index-column id="IDC64" populated="true" UUID="8d0bef8c-7ef0-4322-89e8-3e400e0a7ec0" ascendingOrDescending="UNSPECIFIED" column-ref="COL54" name="sk_vientos_vel" physicalName="sk_vientos_vel" />
+     <index-column id="IDC65" populated="true" UUID="4383ab7e-1fac-4226-a034-ccd50a38aa9a" ascendingOrDescending="UNSPECIFIED" column-ref="COL55" name="sk_humedad" physicalName="sk_humedad" />
+     <index-column id="IDC66" populated="true" UUID="e67736ce-74a3-43d9-a985-7450f19bd2b0" ascendingOrDescending="UNSPECIFIED" column-ref="COL56" name="sk_fecha" physicalName="sk_fecha" />
+     <index-column id="IDC67" populated="true" UUID="9939615b-c80e-4225-ba25-51a97871203e" ascendingOrDescending="UNSPECIFIED" column-ref="COL57" name="sk_vientos_dir" physicalName="sk_vientos_dir" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB68" populated="true" UUID="daa9b747-cfeb-4352-86d6-8b8999a9eb34" name="DIM_FECHA" objectType="TABLE" physicalName="DIM_FECHA" >
+   <remarks></remarks>
+   <folder id="FOLTAB681" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL69" populated="true" UUID="acb5748e-900b-49be-9b12-c70b9952bf19" autoIncrement="true" autoIncrementSequenceName="DIM_FECHA_sk_fecha_seq_1" defaultValue="" name="sk_fecha" nullable="0" physicalName="sk_fecha" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL70" populated="true" UUID="b0d77e61-1a57-4a7d-acbc-4e86d99d218b" autoIncrement="false" autoIncrementSequenceName="DIM_FECHA_dia_seq" defaultValue="" name="dia" nullable="0" physicalName="dia" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL71" populated="true" UUID="7020d241-d718-44ee-943b-1197e5318c06" autoIncrement="false" autoIncrementSequenceName="DIM_FECHA_mes_seq" defaultValue="" name="mes" nullable="0" physicalName="mes" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="87511997-6c98-428b-a77e-501916fd5687" autoIncrement="false" autoIncrementSequenceName="DIM_FECHA_anio_seq" defaultValue="" name="anio" nullable="0" physicalName="anio" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL73" populated="true" UUID="ecc13fb2-bb4b-4b90-a2f7-c0ee2382d3c0" autoIncrement="false" autoIncrementSequenceName="DIM_FECHA_fecha_seq" defaultValue="" name="fecha" nullable="0" physicalName="fecha" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB683" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB682" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB684" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX74" populated="true" UUID="09d49b62-7642-4cc5-8a9d-2e930754f43d" clustered="false" name="PK_DIM_FECHA" physicalName="pk_dim_fecha" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC75" populated="true" UUID="bacf2cab-34ea-4be4-8b7d-bbd2f4c9aa0f" ascendingOrDescending="UNSPECIFIED" column-ref="COL69" name="sk_fecha" physicalName="sk_fecha" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB76" populated="true" UUID="af0806f0-3257-48a8-9168-a47e2ecbb3d6" name="DIM_VIENTOS_DIR" objectType="TABLE" physicalName="DIM_VIENTOS_DIR" >
+   <remarks></remarks>
+   <folder id="FOLTAB761" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL77" populated="true" UUID="edc26216-ac28-4e6f-a3e0-83759595df6b" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_DIR_sk_vientos_dir_seq_1" defaultValue="" name="sk_vientos_dir" nullable="0" physicalName="sk_vientos_dir" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL78" populated="true" UUID="6453655d-8e59-4427-8ff2-a06b6cad9de9" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_DIR_pk_vientos_dir_seq" defaultValue="" name="pk_vientos_dir" nullable="0" physicalName="pk_vientos_dir" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL79" populated="true" UUID="53db4214-35d9-4f8e-a0ac-f5536bc01389" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_belisario_dir_seq" defaultValue="" name="belisario_dir" nullable="0" physicalName="belisario_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL80" populated="true" UUID="c45921a1-6d07-4d9b-aa8d-4f55fe3d8131" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_carapungo_dir_seq" defaultValue="" name="carapungo_dir" nullable="0" physicalName="carapungo_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL81" populated="true" UUID="bee49015-3908-4997-b68c-1f53ea97033c" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_centro_dir_seq" defaultValue="" name="centro_dir" nullable="0" physicalName="centro_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL82" populated="true" UUID="08051c86-edcf-46ff-ba03-3c7032ffb0a2" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_cotocollao_dir_seq" defaultValue="" name="cotocollao_dir" nullable="0" physicalName="cotocollao_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL83" populated="true" UUID="687056f9-8e85-4e05-9132-717ecf40c06f" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_elcamal_dir_seq" defaultValue="" name="elcamal_dir" nullable="0" physicalName="elcamal_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL84" populated="true" UUID="daea2f21-8563-4d89-9b02-8eeba8c7ba3d" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_guamani_dir_seq" defaultValue="" name="guamani_dir" nullable="0" physicalName="guamani_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL85" populated="true" UUID="4e735abe-a4ef-4cdb-9cad-3ab6fdae2710" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_loschillos_dir_seq" defaultValue="" name="loschillos_dir" nullable="0" physicalName="loschillos_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL86" populated="true" UUID="a4a7242e-0fab-446b-9488-c3e5536f62a3" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_sanantonio_dir_seq" defaultValue="" name="sanantonio_dir" nullable="0" physicalName="sanantonio_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL87" populated="true" UUID="4ae89683-3e68-4ae9-92f9-5b3acedce20f" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_tumbaco_dir_seq" defaultValue="" name="tumbaco_dir" nullable="0" physicalName="tumbaco_dir" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL88" populated="true" UUID="fb84ec58-b875-4118-adde-ddd856efca02" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_valido_desde_seq" defaultValue="" name="valido_desde" nullable="1" physicalName="valido_desde" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL89" populated="true" UUID="549f3cb6-95f8-4a56-87d1-7b7ae074a7f9" autoIncrement="false" autoIncrementSequenceName="DIM_VIENTOS_DIR_valido_hasta_seq" defaultValue="" name="valido_hasta" nullable="1" physicalName="valido_hasta" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL90" populated="true" UUID="dcc74a61-581c-4398-a176-0f36c1836c9d" autoIncrement="true" autoIncrementSequenceName="DIM_VIENTOS_DIR_version_seq" defaultValue="" name="version" nullable="0" physicalName="version" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB763" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB762" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB764" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX91" populated="true" UUID="70304494-32f4-4f06-ae24-d1cc7de18549" clustered="false" name="PK_DIM_VIENTOS_DIR" physicalName="pk_dim_vientos_dir" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC92" populated="true" UUID="055a6b92-b306-46e0-8f04-c3245ef253cb" ascendingOrDescending="UNSPECIFIED" column-ref="COL77" name="sk_vientos_dir" physicalName="sk_vientos_dir" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL93" populated="true" UUID="8e4cf78c-41f1-4bc4-ab85-ccb8e6cc3772" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="DIM_PRECIPITACION_FACT_ORDEN_fk" physicalName="dim_precipitacion_fact_orden_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP94" populated="true" UUID="a1f83985-43cb-4b33-b0cc-f7cea03acd15" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL95" populated="true" UUID="71596d53-764a-41f7-9a94-e2a974dd3c39" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="DIM_VIENTOS_FACT_ORDEN_fk" physicalName="dim_vientos_fact_orden_fk" pk-table-ref="TAB18" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP96" populated="true" UUID="00378ab4-e74d-4251-85de-afd049ba3147" fk-column-ref="COL54" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+   <relationship id="REL97" populated="true" UUID="02c378e6-5406-40b3-8e9a-0b4b85adbd32" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="DIM_HUMEDAD_FACT_ORDEN_fk" physicalName="dim_humedad_fact_orden_fk" pk-table-ref="TAB35" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP98" populated="true" UUID="1a90e0c1-8278-4009-8049-261895d06a75" fk-column-ref="COL55" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL36" />
+   </relationship>
+   <relationship id="REL99" populated="true" UUID="a7edcbd8-9645-4ee6-b8bf-50b55e5fa06e" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="DIM_FECHA_FACT_ORDEN_fk" physicalName="dim_fecha_fact_orden_fk" pk-table-ref="TAB68" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP100" populated="true" UUID="26fddd53-4d98-4b93-893f-e5dff03d2c23" fk-column-ref="COL56" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL69" />
+   </relationship>
+   <relationship id="REL101" populated="true" UUID="d3a6b457-617a-4ed3-8cde-b8120b6a0f1e" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="DIM_VIENTOS_DIR_FACT_ORDEN_fk" physicalName="dim_vientos_dir_fact_orden_fk" pk-table-ref="TAB76" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP102" populated="true" UUID="7b03131d-413e-477c-8a15-157422c3005d" fk-column-ref="COL57" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL77" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="59" y="76" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB18" x="108" y="356" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB35" x="450" y="20" bgColor="0xe8cfdb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB52" x="451" y="279" bgColor="0xeec994" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB68" x="914" y="79" bgColor="0xdfedce" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB76" x="864" y="362" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL93" pkConnection="0.5656565656565656" fkConnection="0.4247787610619469" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL95" pkConnection="0.10101010101010101" fkConnection="0.8503937007874016" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL97" pkConnection="0.3891625615763547" fkConnection="0.4533333333333333" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL99" pkConnection="0.20202020202020202" fkConnection="0.15748031496062992" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL101" pkConnection="0.3511111111111111" fkConnection="0.7446808510638298" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
