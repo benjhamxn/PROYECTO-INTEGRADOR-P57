@@ -19,6 +19,7 @@
 <div>
 <header class="cabecera">
 
+
 	<a href="Inicio_Admin.jsp"><img align="left" src="../img/clima.gif" alt="" /></a>
 		
 		<div style="height: 180px;">
