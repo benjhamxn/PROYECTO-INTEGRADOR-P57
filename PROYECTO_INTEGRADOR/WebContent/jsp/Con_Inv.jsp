@@ -64,34 +64,29 @@
 	<br>
 	<br>
 	<br>
-	IMPORTANTE: Solo si maquina soporta una gran cantidad de datos,
-	consultar mediante los botones, de lo contrario, puede dirigirse a la
-	pestaña "Archivos" y podrá encontrar los descargables.<br>
+	IMPORTANTE: Solo se mostraran los 10 ultimos datos, ya que son demasiados 
+	datos que mostrar, si esque desea ver la información completa, puede dirigirse 
+	a la pestaña "Archivos" y podrá encontrar los descargables.<br>
 	<br>
 	<form action="Con_Inv.jsp" method="post" class="form">
 
-			<input type="submit" name="btnC5" value="BOTON EN MANTENIMIENTO" />
-			<br>
+			<input type="submit" name="btnC5" value="DATOS HUMEDAD" /> <br> 
 	</form>
-
-	<form action="Con_Inv.jsp" method="post" class="form">
-		<input type="submit" name="btnC" value="VER DATOS DE HUMEDAD" /> <br>
+	
+	<form action="Con_Inv.jsp" method="post">
+			<input type="submit" name="btnC" value="DATOS PRECIPITACIÓN" /> <br> 
 	</form>
-
-	<form action="Con_Inv.jsp" method="post" class="form">
-		<input type="submit" name="btnC1" value="BOTON EN MANTENIMIENTO" /> <br>
+	
+	<form action="Con_Inv.jsp" method="post">
+			<input type="submit" name="btnC1" value="DATOS VEL. VIENTOS" /> <br> 
 	</form>
-
-	<form action="Con_Inv.jsp" method="post" class="form">
-		<input type="submit" name="btnC2" value="BOTON EN MANTENIMIENTO" /> <br>
-	</form>
-
-	<form action="Con_Inv.jsp" method="post" class="form">
-		<input type="submit" name="btnC3" value="BOTON EN MANTENIMIENTO" /> <br>
-
+	
+	<form action="Con_Inv.jsp" method="post">
+			<input type="submit" name="btnC2" value="DATOS DIR. VIENTOS" /> <br> 
+			<a href="Inicio.jsp">Regresar</a><br>
 		</div>
-	</header>
-	<section class="contenido wrapper"> <br>
+		</header>
+		<section class="contenido wrapper"> <br>
 	</form>
 
 	<%
@@ -101,24 +96,32 @@
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/Base_dimensional_PI", "postgres", "1234");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
 					ResultSet rs = st.executeQuery(
-							" SELECT dim_fecha.sk_fecha, dim_fecha.dia, dim_fecha.mes, dim_fecha.anio, dim_fecha.fecha " 
-							+ " FROM dim_fecha");
+							" SELECT humedad.fecha, humedad.belisario, humedad.carapungo, humedad.centro, "
+							+ "humedad.cotocollao, humedad.elcamal, humedad.guamani, humedad.loschillos, humedad.sanantonio, "
+							+ "humedad.tumbaco FROM humedad");
 
 					// Ponemos los resultados en un table de html
 					out.println(
-							"<table border=\"1\"><tr><td>SK_FECHA</td><td>DIA</td><td>MES</td><td>AÑO</td><td>FECHA</td></tr>");
+							"<table border=\"1\"><tr><td>FECHA</td><td>BELISARIO</td><td>CARAPUNGO</td><td>CENTRO</td>"
+							+ "<td>COTOCOLLAO</td><td>EL CAMAL</td><td>GUAMANÍ</td><td>LOS CHILLOS</td><td>SAN ANTONIO</td>"
+							+ "<td>TUMBACO</td></tr>");
 					while (rs.next()) {
 						out.println("<tr>");
-						out.println("<td>" + rs.getObject("sk_fecha") + "</td>");
-						out.println("<td>" + rs.getObject("dia") + "</td>");
-						out.println("<td>" + rs.getObject("mes") + "</td>");
-						out.println("<td>" + rs.getObject("anio") + "</td>");
 						out.println("<td>" + rs.getObject("fecha") + "</td>");
+						out.println("<td>" + rs.getObject("belisario") + "</td>");
+						out.println("<td>" + rs.getObject("carapungo") + "</td>");
+						out.println("<td>" + rs.getObject("centro") + "</td>");
+						out.println("<td>" + rs.getObject("cotocollao") + "</td>");
+						out.println("<td>" + rs.getObject("elcamal") + "</td>");
+						out.println("<td>" + rs.getObject("guamani") + "</td>");
+						out.println("<td>" + rs.getObject("loschillos") + "</td>");
+						out.println("<td>" + rs.getObject("sanantonio") + "</td>");
+						out.println("<td>" + rs.getObject("tumbaco") + "</td>");
 						out.println("</tr>");
 					}
 					out.println("</table>");
@@ -135,7 +138,7 @@
 			}
 		}
 	%>
-
+	
 	<%
 		if (request.getParameter("btnC") != null) {
 			
@@ -143,33 +146,32 @@
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/Base_Relacional_PI", "postgres", "1234");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
 					ResultSet rs = st.executeQuery(
-							" SELECT humedad.id_humedad, humedad.fecha_hora, humedad.belisario_hum, humedad.carapungo_hum, humedad.centro_hum, "
-							+ "humedad.cotocollao_hum, humedad.elcamal_hum, humedad.guamani_hum, humedad.loschillos_hum, humedad.sanantonio_hum, "
-							+ "humedad.tumbaco_hum FROM humedad");
+							" SELECT precipitacion.fecha, precipitacion.belisario, precipitacion.carapungo, precipitacion.centro, "
+							+ "precipitacion.cotocollao, precipitacion.elcamal, precipitacion.guamani, precipitacion.loschillos, precipitacion.sanantonio, "
+							+ "precipitacion.tumbaco FROM precipitacion");
 
 					// Ponemos los resultados en un table de html
 					out.println(
-							"<table border=\"1\"><tr><td>ID</td><td>FECHA Y HORA</td><td>BELISARIO</td><td>CARAPUNGO</td><td>CENTRO</td>"
+							"<table border=\"1\"><tr><td>FECHA</td><td>BELISARIO</td><td>CARAPUNGO</td><td>CENTRO</td>"
 							+ "<td>COTOCOLLAO</td><td>EL CAMAL</td><td>GUAMANÍ</td><td>LOS CHILLOS</td><td>SAN ANTONIO</td>"
 							+ "<td>TUMBACO</td></tr>");
 					while (rs.next()) {
 						out.println("<tr>");
-						out.println("<td>" + rs.getObject("id_humedad") + "</td>");
-						out.println("<td>" + rs.getObject("fecha_hora") + "</td>");
-						out.println("<td>" + rs.getObject("belisario_hum") + "</td>");
-						out.println("<td>" + rs.getObject("carapungo_hum") + "</td>");
-						out.println("<td>" + rs.getObject("centro_hum") + "</td>");
-						out.println("<td>" + rs.getObject("cotocollao_hum") + "</td>");
-						out.println("<td>" + rs.getObject("elcamal_hum") + "</td>");
-						out.println("<td>" + rs.getObject("guamani_hum") + "</td>");
-						out.println("<td>" + rs.getObject("loschillos_hum") + "</td>");
-						out.println("<td>" + rs.getObject("sanantonio_hum") + "</td>");
-						out.println("<td>" + rs.getObject("tumbaco_hum") + "</td>");
+						out.println("<td>" + rs.getObject("fecha") + "</td>");
+						out.println("<td>" + rs.getObject("belisario") + "</td>");
+						out.println("<td>" + rs.getObject("carapungo") + "</td>");
+						out.println("<td>" + rs.getObject("centro") + "</td>");
+						out.println("<td>" + rs.getObject("cotocollao") + "</td>");
+						out.println("<td>" + rs.getObject("elcamal") + "</td>");
+						out.println("<td>" + rs.getObject("guamani") + "</td>");
+						out.println("<td>" + rs.getObject("loschillos") + "</td>");
+						out.println("<td>" + rs.getObject("sanantonio") + "</td>");
+						out.println("<td>" + rs.getObject("tumbaco") + "</td>");
 						out.println("</tr>");
 					}
 					out.println("</table>");
@@ -187,7 +189,7 @@
 		}
 	%>
 
-
+	
 	<%
 		if (request.getParameter("btnC1") != null) {
 			
@@ -195,23 +197,32 @@
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/PROYECTO_INTEGRADOR", "postgres", "1234");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
 					ResultSet rs = st.executeQuery(
-							" SELECT DISTINCT materia.nombre_materia, docente.nombres_doc, docente.apellidos_doc FROM materia, docente "
-							+ " WHERE docente.cedula_doc=materia.cedula_doc"
-							+ " ORDER BY materia.nombre_materia, docente.nombres_doc, docente.apellidos_doc");
+							" SELECT vientos_vel.fecha, vientos_vel.belisario, vientos_vel.carapungo, vientos_vel.centro, "
+							+ "vientos_vel.cotocollao, vientos_vel.elcamal, vientos_vel.guamani, vientos_vel.loschillos, vientos_vel.sanantonio, "
+							+ "vientos_vel.tumbaco FROM vientos_vel");
 
 					// Ponemos los resultados en un table de html
 					out.println(
-							"<table border=\"1\"><tr><td>MATERIAS</td><td>NOMBRES DOCENTE</td><td>APELLIDOS</td></tr>");
+							"<table border=\"1\"><tr><td>FECHA</td><td>BELISARIO</td><td>CARAPUNGO</td><td>CENTRO</td>"
+							+ "<td>COTOCOLLAO</td><td>EL CAMAL</td><td>GUAMANÍ</td><td>LOS CHILLOS</td><td>SAN ANTONIO</td>"
+							+ "<td>TUMBACO</td></tr>");
 					while (rs.next()) {
 						out.println("<tr>");
-						out.println("<td>" + rs.getObject("nombre_materia") + "</td>");
-						out.println("<td>" + rs.getObject("nombres_doc") + "</td>");
-						out.println("<td>" + rs.getObject("apellidos_doc") + "</td>");
+						out.println("<td>" + rs.getObject("fecha") + "</td>");
+						out.println("<td>" + rs.getObject("belisario") + "</td>");
+						out.println("<td>" + rs.getObject("carapungo") + "</td>");
+						out.println("<td>" + rs.getObject("centro") + "</td>");
+						out.println("<td>" + rs.getObject("cotocollao") + "</td>");
+						out.println("<td>" + rs.getObject("elcamal") + "</td>");
+						out.println("<td>" + rs.getObject("guamani") + "</td>");
+						out.println("<td>" + rs.getObject("loschillos") + "</td>");
+						out.println("<td>" + rs.getObject("sanantonio") + "</td>");
+						out.println("<td>" + rs.getObject("tumbaco") + "</td>");
 						out.println("</tr>");
 					}
 					out.println("</table>");
@@ -228,7 +239,7 @@
 			}
 		}
 	%>
-
+	
 	<%
 		if (request.getParameter("btnC2") != null) {
 			
@@ -236,109 +247,32 @@
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/PROYECTO_INTEGRADOR", "postgres", "1234");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
 					ResultSet rs = st.executeQuery(
-							" SELECT DISTINCT materia.nombre_materia, horario_clases.dia, horario_clases.hora_inicio, horario_clases.hora_fin "
-							+ " FROM materia, horario_clases WHERE materia.cedula_doc=horario_clases.cedula_doc "
-							+ " ORDER BY materia.nombre_materia, horario_clases.dia, horario_clases.hora_inicio, horario_clases.hora_fin");
+							" SELECT vientos_dir.fecha, vientos_dir.belisario, vientos_dir.carapungo, vientos_dir.centro, "
+							+ "vientos_dir.cotocollao, vientos_dir.elcamal, vientos_dir.guamani, vientos_dir.loschillos, vientos_dir.sanantonio, "
+							+ "vientos_dir.tumbaco FROM vientos_dir");
 
 					// Ponemos los resultados en un table de html
 					out.println(
-							"<table border=\"1\"><tr><td>MATERIAS</td><td>DIA</td><td>HORA INICIO</td><td>HORA FIN</td></tr>");
+							"<table border=\"1\"><tr><td>FECHA</td><td>BELISARIO</td><td>CARAPUNGO</td><td>CENTRO</td>"
+							+ "<td>COTOCOLLAO</td><td>EL CAMAL</td><td>GUAMANÍ</td><td>LOS CHILLOS</td><td>SAN ANTONIO</td>"
+							+ "<td>TUMBACO</td></tr>");
 					while (rs.next()) {
 						out.println("<tr>");
-						out.println("<td>" + rs.getObject("nombre_materia") + "</td>");
-						out.println("<td>" + rs.getObject("dia") + "</td>");
-						out.println("<td>" + rs.getObject("hora_inicio") + "</td>");
-						out.println("<td>" + rs.getObject("hora_fin") + "</td>");
-						out.println("</tr>");
-					}
-					out.println("</table>");
-
-					// cierre de la conexion
-					conexion.close();
-				} else
-					// Error en la conexion
-					out.println("fallo");
-			} catch (Exception e) {
-				// Error en algun momento.
-				out.println("Excepcion " + e);
-				e.printStackTrace();
-			}
-		}
-	%>
-
-	<%
-		if (request.getParameter("btnC3") != null) {
-			
-			try {
-				// Conexion con bd
-				Class.forName("org.postgresql.Driver");
-				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/PROYECTO_INTEGRADOR", "postgres", "1234");
-				if (!conexion.isClosed()) {
-					// La consulta
-					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery(
-							" SELECT DISTINCT materia.nombre_materia, sesionesxdocente.num_sesiones "
-							+ " FROM materia, sesionesxdocente "
-							+ " WHERE materia.cedula_doc=sesionesxdocente.cedula_doc"
-							+ " ORDER BY materia.nombre_materia, sesionesxdocente.num_sesiones");
-
-					// Ponemos los resultados en un table de html
-					out.println(
-							"<table border=\"1\"><tr><td>MATERIAS</td><td>N° SESIONES POR SEMANA</td></tr>");
-					while (rs.next()) {
-						out.println("<tr>");
-						out.println("<td>" + rs.getObject("nombre_materia") + "</td>");
-						out.println("<td>" + rs.getObject("num_sesiones") + "</td>");
-						out.println("</tr>");
-					}
-					out.println("</table>");
-
-					// cierre de la conexion
-					conexion.close();
-				} else
-					// Error en la conexion
-					out.println("fallo");
-			} catch (Exception e) {
-				// Error en algun momento.
-				out.println("Excepcion " + e);
-				e.printStackTrace();
-			}
-		}
-	%>
-
-	<%
-		if (request.getParameter("btnC4") != null) {
-
-			try {
-				// Conexion con bd
-				Class.forName("org.postgresql.Driver");
-				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/PROYECTO_INTEGRADOR", "postgres", "1234");
-				if (!conexion.isClosed()) {
-					// La consulta
-					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery(
-							"SELECT * FROM VISTA_INVITADO");
-
-					// Ponemos los resultados en un table de html
-					out.println(
-							"<table border=\"1\"><tr><td>MATERIA</td><td>NOMBRES DOCENTE</td><td>APELLIDOS</td><td>DIA DE CLASES</td><td>HORA DE INICIO</td>"
-									+ "<td>HORA DE FIN</td><td>NUMERO DE SESIONES</td></tr>");
-					while (rs.next()) {
-						out.println("<tr>");
-						out.println("<td>" + rs.getObject("nombre_materia") + "</td>");
-						out.println("<td>" + rs.getObject("nombres_doc") + "</td>");
-						out.println("<td>" + rs.getObject("apellidos_doc") + "</td>");
-						out.println("<td>" + rs.getObject("dia") + "</td>");
-						out.println("<td>" + rs.getObject("hora_inicio") + "</td>");
-						out.println("<td>" + rs.getObject("hora_fin") + "</td>");
-						out.println("<td>" + rs.getObject("num_sesiones") + "</td>");
+						out.println("<td>" + rs.getObject("fecha") + "</td>");
+						out.println("<td>" + rs.getObject("belisario") + "</td>");
+						out.println("<td>" + rs.getObject("carapungo") + "</td>");
+						out.println("<td>" + rs.getObject("centro") + "</td>");
+						out.println("<td>" + rs.getObject("cotocollao") + "</td>");
+						out.println("<td>" + rs.getObject("elcamal") + "</td>");
+						out.println("<td>" + rs.getObject("guamani") + "</td>");
+						out.println("<td>" + rs.getObject("loschillos") + "</td>");
+						out.println("<td>" + rs.getObject("sanantonio") + "</td>");
+						out.println("<td>" + rs.getObject("tumbaco") + "</td>");
 						out.println("</tr>");
 					}
 					out.println("</table>");

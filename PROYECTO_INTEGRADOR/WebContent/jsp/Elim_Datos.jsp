@@ -58,7 +58,7 @@
 					name="tabla" id="tabla">
 					<option value="vientos_vel">Velocidad de Vientos</option>
 					<option value="vientos_dir">Dirección de Vientos</option>
-					<option value="huemedad">Humedad</option>
+					<option value="humedad">Humedad</option>
 					<option value="precipitacion">Precipitación</option>
 				</select>
 
@@ -77,11 +77,11 @@
 			try {
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
-				Connection conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Base_Relacional_PI", "postgres", "123");
+				Connection conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("INSERT INTO "+ tabla+" WHERE (fecha='"+ fecha +"');");
+					ResultSet rs = st.executeQuery("DELETE FROM "+ tabla+" WHERE (fecha='"+ fecha +"');");
 
 					// cierre de la conexion
 					conexion.close();
