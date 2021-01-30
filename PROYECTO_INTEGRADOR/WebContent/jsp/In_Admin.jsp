@@ -12,7 +12,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
-	<form action="Verificar_Usuario_Inv.jsp" method="post">
+	<form action="Verificar_Usuario_Admin.jsp" method="post">
 		<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite pulse faster" alt="Avatar Image">
