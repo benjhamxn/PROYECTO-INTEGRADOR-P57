@@ -23,7 +23,7 @@
 		} else {
 	%>
 
-	<jsp:forward page="In_Inv.jsp">
+	<jsp:forward page="In_Admin.jsp">
 		<jsp:param name="error"
 			value="Datos incorrectos.<br>Vuelva a intentarlo." />
 	</jsp:forward>
