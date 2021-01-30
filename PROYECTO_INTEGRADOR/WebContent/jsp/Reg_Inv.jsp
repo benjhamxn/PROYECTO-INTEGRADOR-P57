@@ -44,39 +44,35 @@
 	</header>
 	<main>
 	<form action="Reg_Inv.jsp" method="post">
-		<div class="login-box">
-			<img src="../img/control.jpg" class="avatar animated infinite"
-				alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Registro Usuario
-				Invitado</h1>
-			<label for="username"> DATOS: </label> <input type="text" name="id"
-				placeholder=" Ingrese numero de la suerte "><input
-				type="text" name="Nombre" placeholder=" Ingrese su nombre ">
-			<input type="text" name="edad" placeholder=" Ingrese su edad ">
-			<input type="text" name="correo"
-				placeholder=" Ingrese su correo electrónico "> <input
-				type="text" name="clave" placeholder=" Ingrese una clave ">
-			<input type="submit" name="btnC" value="REGISTRAR" /> <br> <a
-				href="Registrar.jsp">REGRESAR</a> <br> <a href="In_Inv.jsp">INICIAR
-				SESIÓN</a>
-
-		</div>
+	<div class="login-box">
+			<img src="../img/control.jpg"
+				class="avatar animated infinite" alt="Avatar Image">
+			<h1 class="animated infinite zoomIn slower">Registro Usuario Invitado</h1>
+			<label for="username"> DATOS: </label> <input type="text"
+				name="Nombre" placeholder=" Ingrese su usuario "> <input type="text"
+				name="correo" placeholder=" Ingrese su correo electrónico "> <input type="text"
+				name="contrasenia" placeholder=" Ingrese una clave "> <input
+				type="submit" name="btnC" value="REGISTRAR" /> <br> 
+			<a href="Registrar.jsp">REGRESAR</a> <br>
+			<a href="In_Inv.jsp">INICIAR SESIÓN</a>
+		
+	</div>
 	</form>
 	<%
 		if (request.getParameter("btnC") != null) {
-			String id = request.getParameter("id");
 			String nombre = request.getParameter("Nombre");
-			String edad = request.getParameter("edad");
 			String correo = request.getParameter("correo");
-			String clave = request.getParameter("clave");
+			String contra = request.getParameter("contrasenia");
 			try {
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
-				Connection conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Base_Relacional_PI", "postgres", "123");
+				Connection conexion = DriverManager
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("INSERT INTO usuario VALUES('"+ id +"','"+ nombre +"','"+ edad +"','"+ correo +"','"+ clave +"');");
+					ResultSet rs = st.executeQuery("INSERT INTO usuarios VALUES('"+ nombre +"','"+ correo +"','"+ contra +"','invitado');"
+					+ "INSERT INTO roles VALUES('"+ nombre +"','"+ contra +"','invitado');");
 
 					// cierre de la conexion
 					conexion.close();

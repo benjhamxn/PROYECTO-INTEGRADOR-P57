@@ -59,8 +59,8 @@ public class Usuarios {
 	public boolean obtenerUsuario_I(String usu, String contra) {
 
 		boolean respuesta = false;
-		String sentencia = "select usuario.nombre, usuario.clave from usuario as u where u.nombre='" + usu + "' and u.clave= '"
-				+ contra + "';";
+		String sentencia = "select * from roles as u where u.nombre='" + usu + "' and u.contrasenia= '"
+				+ contra + "' and role = 'invitado';";
 		System.out.print("BIENVENIDO");
 		try {
 			ResultSet rs;
@@ -81,11 +81,11 @@ public class Usuarios {
 
 	}
 
-	public boolean obtenerUsuario_E(String usu, String contra) {
+	public boolean obtenerUsuario_Ad(String usu, String contra) {
 
 		boolean respuesta = false;
-		String sentencia = "select usuario.nombre, usuario.clave from usuario as u where u.nombre='" + usu + "' and u.clave='"
-				+ contra + "';";
+		String sentencia = "select * from roles as u where u.nombre='" + usu + "' and u.contrasenia= '"
+				+ contra + "' and role = 'Admin';";
 		System.out.print(sentencia);
 		try {
 			ResultSet rs;

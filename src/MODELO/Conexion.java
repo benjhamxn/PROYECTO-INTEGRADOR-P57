@@ -39,7 +39,7 @@ public class Conexion {
 		this.driver = "org.postgresql.Driver";
 		this.user = "postgres";
 		this.pwd = "1234";
-		this.cadena = "jdbc:postgresql://localhost:5432/Base_Relacional_PI";
+		this.cadena = "jdbc:postgresql://localhost:5432/Base_Base_alterna";
 		this.con = this.crearConexion();
 
 	}
