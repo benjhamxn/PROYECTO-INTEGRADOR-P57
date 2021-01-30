@@ -19,7 +19,7 @@
 		
 			sesion.setAttribute("clave", perfil.getClave());
 			
-			response.sendRedirect("Con_Admin.jsp");
+			response.sendRedirect("Con_Inv.jsp");
 		} else {
 	%>
 
