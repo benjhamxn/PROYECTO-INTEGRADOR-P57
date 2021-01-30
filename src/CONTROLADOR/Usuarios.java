@@ -100,7 +100,7 @@ public class Usuarios {
 				rs.close();
 			}
 		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
+			System.out.println("USUARIO O CONTRASEÑA INCORRECTOS");
 		}
 		return respuesta;
 
