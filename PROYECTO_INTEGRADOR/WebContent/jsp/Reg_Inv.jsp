@@ -31,13 +31,12 @@
 	<div align="center">
 		<ul id="button" class="listado_2">
 
-			<li><a href="Inicio.jsp">Inicio</a></li>
+			<li><a href="Inicio_Admin.jsp">Inicio</a></li>
 
-			<li><a href="Autores.jsf">Autores</a></li>
+			<li><a href="Mod_Usuario.jsp">Modificar Usuario</a></li>
 
-			<li><a href="Info.jsf">Información</a></li>
+			<li><a href="Elim_Usuario.jsp">Eliminar Usuario</a></li>
 
-			<li><a href="Login.jsf">Iniciar Sesión</a></li>
 
 		</ul>
 	</div>
