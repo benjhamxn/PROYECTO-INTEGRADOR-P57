@@ -160,12 +160,23 @@ header nav a:hover {
 }
 
 main{
-	background-color: rgb(0, 255, 234);
+	background-color: blue;
 }
 main a[href^=https] {
 
     color:  blue ;
   
+}
+
+.imagen_nuestra{
+    width:"30" ;
+    height:"150";
+
+}
+
+img, video{
+    max-width: 100%;
+    height: auto;
 }
 
 main h3{
