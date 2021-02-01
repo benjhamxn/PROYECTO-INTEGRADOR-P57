@@ -41,8 +41,75 @@
 		</ul>
 	</div>
 	</header>
+	<main>
+	<div align="center">
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+		<h1>Autores</h1>
+		<div>
+			<div>
+				<div class="imagen_nuestra">
+					<img src="../img/Ari.jpeg" 
+						style="width: 150px; height: 200px;" />
 
-	<main> </main>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<p>
+						Aracelly Alvarez<br /> Universidad Politécnica Salesiana<br />
+						aalvarez@est.ups.edu.ec<br /> <a
+							href="https://github.com/JBorja96"> Perfil GitHub</a>
+					</p>
+				</ul>
+			</div>
+		</div>
+		<div class="imagen_nuestra">
+			<img src="../img/IO.jpeg" 
+				style="width: 150px; height: 175px;" />
+
+		</div>
+		<div>
+			<ul>
+					<p align="center">
+					Sebastián Espinel<br /> Universidad Politécnica Salesiana<br />
+					jespinelp@est.ups.edu.ec<br /> <a
+						href="https://github.com/Jespinelp"> Perfil GitHub</a>
+				</p>
+			</ul>
+		</div>
+
+		<div class="imagen_nuestra">
+			<img src="../img/Benjamin.jpg" align="top"
+				style="width: 150px; height: 175px;" />
+
+		</div>
+		<div>
+			<ul>
+					<p align="center">
+					Benjamín Ríos<br /> Universidad Politécnica
+					Salesiana<br /> @est.ups.edu.ec<br /> <a
+						href="https://github.com/benjhamxn"> Perfil GitHub</a>
+				</p>
+			</ul>
+		</div>
+		<div class="imagen_nuestra">
+			<img src="../img/Franks.jpg" align="top"
+				style="width: 150px; height: 175px;" />
+
+		</div>
+		<div>
+			<ul>
+					<p align="center">
+					Franks Sañay<br /> Universidad Politécnica
+					Salesiana<br /> fsanays@est.ups.edu.ec<br /> <a
+						href="https://github.com/Franks2695"> Perfil GitHub</a>
+				</p>
+			</ul>
+		</div>
+	</div>
+
+
+	</main>
 
 
 
