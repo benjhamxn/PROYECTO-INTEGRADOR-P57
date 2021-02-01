@@ -32,7 +32,7 @@
 <div align="center">
 <ul id="button" class="listado_2">
 
-	<li><a href="Inicio_Inv.jsp">Inicio</a></li>
+	<li><a href="Inicio_Usuario.jsp">Inicio</a></li>
 	
 	<li><a href="Con_Inv.jsp">Consultar</a></li>
 	

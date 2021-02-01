@@ -31,17 +31,17 @@
 </ul>
 </div>
 	
-	<form action="Inicio_Inv.jsp" method="post">
+	<form action="In_Inv.jsp" method="post">
 	<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite" alt="Avatar Image">
 			<h1 class="animated infinite zoomIn slower">Seleccione un Usuario</h1>
 			
-		<input type="submit" value="INVITADO" />
+		<input type="submit" value="USUARIO" />
 	
 	</form>
 
-	<form action="In_Inv.jsp" method="post">
+	<form action="In_Admin.jsp" method="post">
 		<input type="submit" value="ADMINISTRADOR" />
 	
 	</div>
