@@ -41,21 +41,32 @@
 		</ul>
 	</div>
 	</header>
-	<main>
+	<main> <br>
+	<br>
+	<br>
+	<br>
 	<form action="Reg_Inv.jsp" method="post">
-	<div class="login-box">
-			<img src="../img/control.jpg"
-				class="avatar animated infinite" alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Registro Usuario Invitado</h1>
+		<div class="login-box">
+			<img src="../img/control.jpg" class="avatar animated infinite"
+				alt="Avatar Image">
+			<label class="animated infinite zoomIn slower">Registro Usuario
+				Invitado</label>
+			<div>
+				<label for="tabla"> Seleccione rol de usuario</label> <select
+					name="tabla" id="tabla">
+					<option value="usu">Usuario</option>
+					<option value="admin">Administrador</option>
+				</select>
+
+			</div>
 			<label for="username"> DATOS: </label> <input type="text"
-				name="Nombre" placeholder=" Ingrese su usuario "> <input type="text"
-				name="correo" placeholder=" Ingrese su correo electrónico "> <input type="text"
-				name="contrasenia" placeholder=" Ingrese una clave "> <input
-				type="submit" name="btnC" value="REGISTRAR" /> <br> 
-			<a href="Registrar.jsp">REGRESAR</a> <br>
-			<a href="In_Inv.jsp">INICIAR SESIÓN</a>
-		
-	</div>
+				name="Nombre" placeholder=" Ingrese su usuario "> <input
+				type="text" name="correo"
+				placeholder=" Ingrese su correo electrónico "> <input
+				type="text" name="contrasenia" placeholder=" Ingrese una clave ">
+			<input type="submit" name="btnC" value="REGISTRAR" /> <br> 
+
+		</div>
 	</form>
 	<%
 		if (request.getParameter("btnC") != null) {

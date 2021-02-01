@@ -20,11 +20,10 @@
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite" alt="Avatar Image">
 			<h1 class="animated infinite zoomIn slower">Eliminando Usuario</h1>
-			<label for="username"> Nombre: </label> <input type="text"
-				name="Nombre" placeholder=" Ingrese un usuario "> <input
+			<label for="username"> Correo </label> <input type="text"
+				name="Nombre" placeholder=" Ingrese el correo del usuario a ser eliminado "> <input
 				type="submit" name="btnC" value="ELIMINAR" /> <br> <br> <br> <br>
-			<a href="Registrar.jsp">REGRESAR</a> <br>
-			<a href="In_Inv.jsp">INICIAR SESIÓN</a>
+			
 		
 	</div>
 	</form>
@@ -39,8 +38,7 @@
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("delete FROM roles WHERE nombre='"+ nombre +"';"
-					+ "delete FROM usuarios WHERE nombre='"+ nombre +"';");
+					ResultSet rs = st.executeQuery("Delete FROM usuarios WHERE correo='"+ nombre +"';");
 
 					// cierre de la conexion
 					conexion.close();
