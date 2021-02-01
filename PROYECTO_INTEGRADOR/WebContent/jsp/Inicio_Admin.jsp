@@ -33,11 +33,11 @@
 
 	<li><a href="Inicio_Admin.jsp">Inicio</a></li>
 	
-	<li><a href="Con_Admin.jsp">Consultar</a></li>
+	<li><a href="Con_Datos.jsp">Consultar</a></li>
 	
 	<li><a href="">Usuarios</a></li>
 	
-	<li><a href="Pagina_Principal.jsp">Cerrar Sesión</a></li>
+	<li><a href="Inicio_Inv">Cerrar Sesión</a></li>
 
 </ul>
 </div>
