@@ -58,7 +58,7 @@
 					<p>
 						Aracelly Alvarez<br /> Universidad Politécnica Salesiana<br />
 						aalvarez@est.ups.edu.ec<br /> <a
-							href="https://github.com/JBorja96"> Perfil GitHub</a>
+							href="https://github.com/aracelly123-lang"> Perfil GitHub</a>
 					</p>
 				</ul>
 			</div>
