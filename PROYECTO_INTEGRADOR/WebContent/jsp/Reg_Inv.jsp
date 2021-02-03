@@ -52,8 +52,8 @@
 			<label class="animated infinite zoomIn slower">Registro Usuario
 				Invitado</label>
 			<div>
-				<label for="tabla"> Seleccione rol de usuario</label> <select
-					name="tabla" id="tabla">
+				<label for="usua"> Seleccione rol de usuario</label> <select
+					name="usua" id="usua">
 					<option value="usu">Usuario</option>
 					<option value="admin">Administrador</option>
 				</select>
@@ -73,16 +73,17 @@
 			String nombre = request.getParameter("Nombre");
 			String correo = request.getParameter("correo");
 			String contra = request.getParameter("contrasenia");
+			String usuario = request.getParameter("usua");
 			try {
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "123");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("INSERT INTO usuarios VALUES('"+ nombre +"','"+ correo +"','"+ contra +"','invitado');"
-					+ "INSERT INTO roles VALUES('"+ nombre +"','"+ contra +"','invitado');");
+					ResultSet rs = st.executeQuery("INSERT INTO usuarios VALUES('"+ nombre +"','"+ correo +"','"+ contra +"','"+usuario+"');"
+					+ "INSERT INTO roles VALUES('"+ nombre +"','"+ contra +"','"+usuario+"');");
 
 					// cierre de la conexion
 					conexion.close();

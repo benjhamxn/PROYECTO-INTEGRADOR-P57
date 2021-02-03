@@ -24,7 +24,7 @@
 <div align="center">
 <ul id="button" class="listado_2">
 
-	<li><a href="Inicio_inv.jsp">Inicio</a></li>
+	<li><a href="Inicio_Inv.jsp">Inicio</a></li>
 	
 	<li><a href="Autores.jsp">Autores</a></li>
 
