@@ -42,16 +42,23 @@
 	</div>
 	</header>
 	<main>
-	<form action="Reg_Inv.jsp" method="post">
+	<form action="Mod_Inv.jsp" method="post">
 	<div class="login-box">
-			<img src="../img/control.jpg"
+			<img src="../img/cv.jpg"
 				class="avatar animated infinite" alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Registro Usuario Invitado</h1>
-			<label for="username"> DATOS: </label> <input type="text"
-				name="Nombre" placeholder=" Ingrese su usuario "> <input type="text"
-				name="correo" placeholder=" Ingrese su correo electrónico "> <input type="text"
-				name="contrasenia" placeholder=" Ingrese una clave "> <input
-				type="submit" name="btnC" value="REGISTRAR" /> <br> 
+			<h1 class="animated infinite zoomIn slower">Modificando Usuario</h1>
+			<label for="username"> INGRESE USUARIO: </label> <input type="text"
+				name="nombre" placeholder=" Ingrese Usuario "> 
+				<table>
+				<td><Select name="combo">
+						<option value="">Seleccione dato a cambiar</option>
+						<option value="correo">CORREO</option>
+						<option value="contrasenia">CONTRASEÑA</option>
+				</Select></td>
+			</table>
+				<label for="username"> DATO A MODIFICAR: </label> <input type="text"
+				name="dato" placeholder=" Ingrese dato a modificar "> 
+				<input type="submit" name="btnC" value="ACTUALIZAR" /> <br> 
 			<a href="Registrar.jsp">REGRESAR</a> <br>
 			<a href="In_Inv.jsp">INICIAR SESIÓN</a>
 		
@@ -59,9 +66,9 @@
 	</form>
 	<%
 		if (request.getParameter("btnC") != null) {
-			String nombre = request.getParameter("Nombre");
-			String correo = request.getParameter("correo");
-			String contra = request.getParameter("contrasenia");
+			String nombre = request.getParameter("nombre");
+			String combo = request.getParameter("combo");
+			String dato = request.getParameter("dato");
 			try {
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
@@ -70,8 +77,8 @@
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("INSERT INTO usuarios VALUES('"+ nombre +"','"+ correo +"','"+ contra +"','invitado');"
-					+ "INSERT INTO roles VALUES('"+ nombre +"','"+ contra +"','invitado');");
+					ResultSet rs = st.executeQuery(
+							"UPDATE usuarios SET "+ combo + "='" + dato + "' WHERE nombre='"+ nombre + "'");
 
 					// cierre de la conexion
 					conexion.close();
@@ -80,7 +87,8 @@
 					out.println("fallo");
 			} catch (Exception e) {
 				// Error en algun momento.
-				out.println(e);
+				out.println("USUARIO MODIFICADO");
+				
 			}
 		}
 	%> </main>
