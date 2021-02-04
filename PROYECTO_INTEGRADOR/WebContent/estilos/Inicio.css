@@ -27,3 +27,8 @@ h3{
 	text-align: left;
 	color: white;
 }
+table{
+    background-color: #80ffff;
+    border-color: black;
+    margin: 2rem;
+}
