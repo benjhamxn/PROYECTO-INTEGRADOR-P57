@@ -12,11 +12,36 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
+	<div>
+		<header class="cabecera"> <a href="Inicio_Admin.jsp"><img
+			align="left" src="../img/clima.gif" alt="" /></a>
+
+		<div style="height: 180px;">
+			<a class="titulos">
+				<h1>
+					CONTROL ATMOSFÉRICO<br /> DEL<br /> DISTRITO METROPOLITANO DE
+					QUITO
+				</h1>
+			</a>
+		</div>
+	</div>
+	<div align="center">
+		<ul id="button" class="listado_2">
+
+			<li><a href="Inicio_Usuario.jsp">Inicio</a></li>
+
+			
+			<li><a href="In_Admin.jsp">Iniciar Sesión</a></li>
+
+
+		</ul>
+	</div>
+	</header>
 	<form action="Verificar_Usuario_Admin.jsp" method="post">
 		<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite pulse faster" alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Iniciar Sesion (Administrador)</h1>
+			<h1 class="animated infinite zoomIn slower">Iniciar Sesión (Administrador)</h1>
 			<label for="username">Usuario</label> 
 			<input type="text" name="usuario" placeholder="Ingrese su Usuario">
 			<input type="text" name="clave" placeholder="Ingrese su contraseña">  
