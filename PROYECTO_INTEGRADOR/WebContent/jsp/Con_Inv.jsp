@@ -35,7 +35,7 @@
 	
 	<li><a href="Autores.jsp">Autores</a></li>
 
-	<li><a href="In_Inv.jsp">Iniciar Sesión</a></li>
+
 
 </ul>
 </div>
@@ -70,27 +70,30 @@
 	IMPORTANTE: Solo se mostraran los 10 ultimos datos, ya que son demasiados 
 	datos que mostrar, si esque desea ver la información completa, puede dirigirse 
 	a la pestaña "Archivos" y podrá encontrar los descargables.<br>
-	<br>
+	<br><br><br>
+	<div align="right">
 	<form action="Con_Inv.jsp" method="post" class="form">
 
-			<input type="submit" name="btnC5" value="DATOS HUMEDAD" /> <br> 
+			<input type="submit" name="btnC5" value="DATOS HUMEDAD" /> <br> <br>
 	</form>
 	
 	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC" value="DATOS PRECIPITACIÓN" /> <br> 
+			<input type="submit" name="btnC" value="DATOS PRECIPITACIÓN" /> <br> <br>
 	</form>
 	
 	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC1" value="DATOS VEL. VIENTOS" /> <br> 
+			<input type="submit" name="btnC1" value="DATOS VEL. VIENTOS" /> <br> <br>
 	</form>
 	
 	<form action="Con_Inv.jsp" method="post">
-			<input type="submit" name="btnC2" value="DATOS DIR. VIENTOS" /> <br> 
+			<input type="submit" name="btnC2" value="DATOS DIR. VIENTOS" /> <br> <br>
 		</div>
 		</header>
 		<section class="contenido wrapper"> <br>
 	</form>
+	</div>
 
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<%
 		if (request.getParameter("btnC5") != null) {
 			
@@ -292,7 +295,7 @@
 		}
 	%>
 </body>
-
+<br><br><br><br><br><br><br><br><br><br><br>
 <footer class="footer">
 <div align="center">
 	Licencia Apache 2.0. <br />Para más información <a
