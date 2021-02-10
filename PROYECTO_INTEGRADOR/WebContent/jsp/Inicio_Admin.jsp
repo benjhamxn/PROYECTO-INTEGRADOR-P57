@@ -35,7 +35,9 @@
 	
 	<li><a href="Con_Datos.jsp">Consultar</a></li>
 	
-	<li><a href="Reg_Inv.jsp">Usuarios</a></li>
+	<li><a href="Ver_usuario.jsp">Usuarios</a></li>
+	
+	<li><a href="Archivos_Admin.jsp">Archivos</a></li>
 	
 	<li><a href="Inicio_Inv.jsp">Cerrar Sesión</a></li>
 
