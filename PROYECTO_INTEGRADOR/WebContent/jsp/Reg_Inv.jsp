@@ -31,11 +31,9 @@
 	<div align="center">
 		<ul id="button" class="listado_2">
 
-			<li><a href="Inicio_Admin.jsp">Inicio</a></li>
+			<li><a href="Pagina_Principal.jsp">Inicio</a></li>
 
-			<li><a href="Mod_Usuario.jsp">Modificar Usuario</a></li>
-
-			<li><a href="Elim_Inv.jsp">Eliminar Usuario</a></li>
+			<li><a href="In_Inv.jsp">Iniciar Sesión</a></li>
 
 
 		</ul>
@@ -52,10 +50,10 @@
 			<label class="animated infinite zoomIn slower">Registro Usuario
 				Invitado</label>
 			<div>
-				<label for="usua"> Seleccione rol de usuario</label> <select
+				<label for="usua"></label> <select
 					name="usua" id="usua">
-					<option value="usu">Usuario</option>
-					<option value="admin">Administrador</option>
+					<option value="usuario">Usuario</option>
+					
 				</select>
 
 			</div>
@@ -78,7 +76,7 @@
 				// Conexion con bd
 				Class.forName("org.postgresql.Driver");
 				Connection conexion = DriverManager
-						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "123");
+						.getConnection("jdbc:postgresql://localhost:5432/Base_alterna", "postgres", "1234");
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
