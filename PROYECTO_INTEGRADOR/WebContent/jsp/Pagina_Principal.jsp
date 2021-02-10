@@ -31,12 +31,13 @@
 </ul>
 </div>
 	
-	<form action="In_Inv.jsp" method="post">
+	<form action="Reg_Inv.jsp" method="post">
+	
 	<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite" alt="Avatar Image">
 			<h1 class="animated infinite zoomIn slower">Seleccione un Usuario</h1>
-			
+			<br><br><br>
 		<input type="submit" value="USUARIO" />
 	
 	</form>
