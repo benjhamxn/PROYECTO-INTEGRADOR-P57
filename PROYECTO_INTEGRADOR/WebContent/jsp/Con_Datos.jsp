@@ -1,4 +1,3 @@
-<!-- Los import -->
 <%@ page language="java"%>
 <%@ page import="java.sql.Connection"%>
 <%@ page import="java.sql.DriverManager"%>
@@ -26,19 +25,19 @@
 <body>
 	<h1></h1>
 	<header class="cabecera">
-<div align="center">
-<ul id="button" class="listado_2">
+	<div align="center">
+		<ul id="button" class="listado_2">
 
-	<li><a href="Inicio_Admin.jsp">Inicio</a></li>
-	
-	<li><a href="In_Datos.jsp">Ingresar Datos</a></li>
+			<li><a href="Inicio_Admin.jsp">Inicio</a></li>
 
-	<li><a href="Mod_Datos.jsp">Modificar Datos</a></li>
-	
-	<li><a href="Elim_Datos.jsp">Eliminar Datos</a></li>
+			<li><a href="In_Datos.jsp">Ingresar Datos</a></li>
 
-</ul>
-</div>
+			<li><a href="Mod_Datos.jsp">Modificar Datos</a></li>
+
+			<li><a href="Elim_Datos.jsp">Eliminar Datos</a></li>
+
+		</ul>
+	</div>
 	<div>
 		<header class="cabecera"> <a href="Inicio_Admin.jsp"><img
 			align="left" src="../img/clima.gif" alt="" /></a>
@@ -70,8 +69,7 @@
 	<br>
 	<form action="Con_Inv.jsp" method="post" class="form">
 
-			<input type="submit" name="btnC5" value="BOTON EN MANTENIMIENTO" />
-			<br>
+		<input type="submit" name="btnC5" value="BOTON EN MANTENIMIENTO" /> <br>
 	</form>
 
 	<form action="Con_Inv.jsp" method="post" class="form">
@@ -134,9 +132,7 @@
 				e.printStackTrace();
 			}
 		}
-	%>
-
-	<%
+	%> <%
 		if (request.getParameter("btnC") != null) {
 			
 			try {
@@ -185,10 +181,7 @@
 				e.printStackTrace();
 			}
 		}
-	%>
-
-
-	<%
+	%> <%
 		if (request.getParameter("btnC1") != null) {
 			
 			try {
@@ -227,9 +220,7 @@
 				e.printStackTrace();
 			}
 		}
-	%>
-
-	<%
+	%> <%
 		if (request.getParameter("btnC2") != null) {
 			
 			try {
@@ -269,9 +260,7 @@
 				e.printStackTrace();
 			}
 		}
-	%>
-
-	<%
+	%> <%
 		if (request.getParameter("btnC3") != null) {
 			
 			try {
@@ -310,9 +299,7 @@
 				e.printStackTrace();
 			}
 		}
-	%>
-
-	<%
+	%> <%
 		if (request.getParameter("btnC4") != null) {
 
 			try {
@@ -355,6 +342,7 @@
 			}
 		}
 	%>
+	
 </body>
 
 <footer class="footer">
