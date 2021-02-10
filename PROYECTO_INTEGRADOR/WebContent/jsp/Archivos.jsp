@@ -37,11 +37,9 @@
 
 			<li><a href="Inicio_Usuario.jsp">Inicio</a></li>
 
-			<li><a href="Con_Inv.jsp">Consultar</a></li>
+			<li><a href="Con_Usuario.jsp">Consultar</a></li>
 
-			<li><a href="Autores.jsp">Autores</a></li>
-
-			<li><a href="Pagina_Principal.jsp">Iniciar Sesión</a></li>
+			<li><a href="Autores_usu.jsp">Autores</a></li>
 
 
 		</ul>
