@@ -9,19 +9,47 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link rel="stylesheet" href="../estilos/IniciarSesio.css">
+<link rel="stylesheet" href="../estilos/Registro_Inv.css">
+<link rel="stylesheet" href="../estilos/Cabecera.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
-	
+	<div>
+		<header class="cabecera"> <a href="Inicio_Admin.jsp"><img
+			align="left" src="../img/clima.gif" alt="" /></a>
+
+		<div style="height: 180px;">
+			<a class="titulos">
+				<h1>
+					CONTROL ATMOSFÉRICO<br /> DEL<br /> DISTRITO METROPOLITANO DE
+					QUITO
+				</h1>
+			</a>
+		</div>
+	</div>
+	<div align="center">
+		<ul id="button" class="listado_2">
+
+			<li><a href="Inicio_Admin.jsp">Inicio</a></li>
+
+			<li><a href="Con_Datos.jsp">Consultar</a></li>
+
+			<li><a href="In_Datos.jsp">Insertar Datos</a></li>
+			
+			<li><a href="Elim_Datos.jsp">Eliminar Datos</a></li>
+
+
+		</ul>
+	</div>
+	</header>
 	<form action="Elim_Inv.jsp" method="post">
 	<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite" alt="Avatar Image">
 			<h1 class="animated infinite zoomIn slower">Eliminando Usuario</h1>
-			<label for="username"> Correo </label> <input type="text"
-				name="Nombre" placeholder=" Ingrese el correo del usuario a ser eliminado "> <input
+			<label for="username"> Usuario </label> <input type="text"
+				name="Nombre" placeholder=" Ingrese el Usuario a eliminar "> <input
 				type="submit" name="btnC" value="ELIMINAR" /> <br> <br> <br> <br>
 			
 		
@@ -38,7 +66,7 @@
 				if (!conexion.isClosed()) {
 					// La consulta
 					Statement st = conexion.createStatement();
-					ResultSet rs = st.executeQuery("Delete FROM usuarios WHERE correo='"+ nombre +"';");
+					ResultSet rs = st.executeQuery("Delete FROM usuarios WHERE nombre='"+ nombre +"';");
 
 					// cierre de la conexion
 					conexion.close();
