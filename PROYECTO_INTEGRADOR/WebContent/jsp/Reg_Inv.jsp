@@ -35,7 +35,7 @@
 
 			<li><a href="Mod_Usuario.jsp">Modificar Usuario</a></li>
 
-			<li><a href="Elim_Usuario.jsp">Eliminar Usuario</a></li>
+			<li><a href="Elim_Inv.jsp">Eliminar Usuario</a></li>
 
 
 		</ul>

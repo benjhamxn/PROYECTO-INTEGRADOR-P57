@@ -53,6 +53,9 @@
 		</div>
 	</div>
 	<br>
+	<br><br>
+	<br>
+	<br>
 	<br>
 	<br>
 	<br>
@@ -83,7 +86,6 @@
 	
 	<form action="Con_Inv.jsp" method="post">
 			<input type="submit" name="btnC2" value="DATOS DIR. VIENTOS" /> <br> 
-			<a href="Inicio.jsp">Regresar</a><br>
 		</div>
 		</header>
 		<section class="contenido wrapper"> <br>

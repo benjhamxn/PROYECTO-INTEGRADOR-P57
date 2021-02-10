@@ -44,7 +44,7 @@
 </body>
 
 	<div class="login-box">
-		<h1>CONTROL ATMOSFÉRICO</h1>
+		<h1><br><br>CONTROL ATMOSFÉRICO</h1>
 		<h3 class="obj">OBJETIVO DE LA PÁGINA</h3>
 		<h3 class="tres">Esta página se encarga del alojamiento de información acerca del control atmosférico en varios sectores del Ditrito Metropolitano de Quito(DMQ), asi mismo se facilitará la descarga de estos archivos y sus reportes en diferentes diagramas y en diferentes formatos.</h3><br>	
 		

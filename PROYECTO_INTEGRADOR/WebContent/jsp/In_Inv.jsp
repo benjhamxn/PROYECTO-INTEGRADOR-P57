@@ -16,7 +16,7 @@
 		<div class="login-box">
 			<img src="../img/cv.jpg"
 				class="avatar animated infinite pulse faster" alt="Avatar Image">
-			<h1 class="animated infinite zoomIn slower">Iniciar Sesion (Invitado)</h1>
+			<h1 class="animated infinite zoomIn slower">Iniciar Sesion (Usuario)</h1>
 			<label for="username">Usuario</label> 
 			<input type="text" name="usuario" placeholder="Ingrese su Usuario">
 			<input type="text" name="clave" placeholder="Ingrese su contraseña">  
