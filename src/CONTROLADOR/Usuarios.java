@@ -60,7 +60,7 @@ public class Usuarios {
 
 		boolean respuesta = false;
 		String sentencia = "select * from roles as u where u.nombre='" + usu + "' and u.contrasenia= '"
-				+ contra + "' and role = 'invitado';";
+				+ contra + "' and role = 'usuario';";
 		System.out.print("BIENVENIDO");
 		try {
 			ResultSet rs;
@@ -85,7 +85,7 @@ public class Usuarios {
 
 		boolean respuesta = false;
 		String sentencia = "select * from roles as u where u.nombre='" + usu + "' and u.contrasenia= '"
-				+ contra + "' and role = 'Admin';";
+				+ contra + "' and role = 'admin';";
 		System.out.print(sentencia);
 		try {
 			ResultSet rs;
@@ -105,5 +105,6 @@ public class Usuarios {
 		return respuesta;
 
 	}
+
 
 }
