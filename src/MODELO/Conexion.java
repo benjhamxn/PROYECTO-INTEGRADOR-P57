@@ -38,7 +38,7 @@ public class Conexion {
 
 		this.driver = "org.postgresql.Driver";
 		this.user = "postgres";
-		this.pwd = "123";
+		this.pwd = "1234";
 		this.cadena = "jdbc:postgresql://localhost:5432/Base_alterna";
 		this.con = this.crearConexion();
 
@@ -53,7 +53,7 @@ public class Conexion {
 		}
 
 			try {
-				Class.forName(getDriver()).getDeclaredConstructor().newInstance();
+				Class.forName(getDriver()).newInstance();
 				Connection con = DriverManager.getConnection(getCadena(), getUser(), getPwd());
 				System.out.println("Conexion 2: Exitosa");
 				return con;
