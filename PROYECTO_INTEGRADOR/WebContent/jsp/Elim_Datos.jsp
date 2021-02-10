@@ -65,7 +65,7 @@
 			</div>
 
 			<input type="text" name="fecha" placeholder=" Ingrese la fecha de la cual eliminara los datos ">
-			<input type="submit" name="btnC" value="REGISTRAR" />
+			<input type="submit" name="btnC" value="ELIMINAR" />
 
 		</div>
 	</form>
