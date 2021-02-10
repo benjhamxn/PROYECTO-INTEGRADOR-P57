@@ -74,7 +74,7 @@
 			<input type="text" name="LosChillos" placeholder=" Ingrese valor de Los Chillos ">
 			<input type="text" name="SanAntonio" placeholder=" Ingrese valor de San Antonio ">
 			<input type="text" name="Tumbaco" placeholder=" Ingrese valor de Tumbaco ">
-			<input type="submit" name="btnC" value="REGISTRAR" />
+			<input type="submit" name="btnC" value="INGRESAR" />
 
 		</div>
 	</form>
